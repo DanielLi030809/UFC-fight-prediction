@@ -22,7 +22,7 @@ def clean(string):
           return string
 
 # Gets all the fighter urls from one page
-def get_name_urls(page):
+def get_fighter_urls(page):
      urls = []
      for row in page:
           first_name = row.find("td", class_="b-statistics__table-col")
@@ -40,7 +40,7 @@ alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
 base_url = "http://www.ufcstats.com/statistics/fighters?char="
 
 # Gets all the urls of all the pages
-def get_page_urls():
+def get_all_page_urls():
      urls = []
      for letter in alphabet:
           url = base_url + letter
@@ -57,13 +57,13 @@ def get_page_urls():
      return urls
 
 # Retrieves a list of links for the entire ufc roster
-list_of_urls = get_page_urls()
+list_of_urls = get_all_page_urls()
 all_fighter_urls = []
 for url in list_of_urls:
      page_to_scrape = requests.get(url)
      soup = BeautifulSoup(page_to_scrape.text, "lxml")
      page = soup.findAll("tr", attrs={"class": "b-statistics__table-row"})[2:]
-     all_fighter_urls += get_name_urls(page)
+     all_fighter_urls += get_fighter_urls(page)
 
 
 columns = ["Full Name", "Height(inches)", "Weight(lbs)", "Reach(inches)",
