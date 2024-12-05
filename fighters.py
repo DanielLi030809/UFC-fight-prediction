@@ -2,6 +2,9 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import lxml
+import time
+
+start_time = time.time()
 
 # converts the units of height feature from ft to inches
 def convert_to_inches(string):
@@ -95,6 +98,9 @@ for fighter_url in all_fighter_urls:
 
 file.close()
 
+end_time = time.time()
+
+print(f"Total time taken: {end_time - start_time} seconds")
 
 
 
