@@ -79,7 +79,9 @@ writer.writerow(columns)
 for fighter_url in all_fighter_urls:
      fighter_page = requests.get(fighter_url)
      soup = BeautifulSoup(fighter_page.text, "lxml")
-     full_name = soup.find("span", class_='b-content__title-highlight').text.strip()
+     # Try to get the fighter's full name
+     full_name_tag = soup.find("span", class_='b-content__title-highlight')
+     full_name = full_name_tag.text.strip() if full_name_tag else "N/A"
      attributes = soup.findAll("li", class_="b-list__box-list-item b-list__box-list-item_type_block")
 
      fighter_attributes = [full_name]

@@ -3,6 +3,9 @@ import requests
 import csv
 import lxml
 from concurrent.futures import ThreadPoolExecutor
+import time
+
+start_time = time.time()
 
 # Converts the units of height feature from ft to inches
 def convert_to_inches(string):
@@ -98,7 +101,7 @@ def main():
                "Stance", "DOB", "SLpM.", "Str.Acc.", "SApM", "Str.Def", "TD Avg.",
                "TD Acc.", "TD Def.", "Sub. Avg.", "W", "L", "D"]
     
-    with open("fighter-stats.csv", "w", newline="", encoding="utf-8") as file:
+    with open("fighter-stats-threading.csv", "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(columns)
 
@@ -112,3 +115,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+end_time = time.time()
+print(f"Total time taken: {end_time - start_time} seconds")
