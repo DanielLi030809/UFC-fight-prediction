@@ -1,4 +1,4 @@
-Full Name,Height(inches),Weight(lbs),Reach(inches),Stance,DOB,SLpM.,Str.Acc.,SApM,Str.Def,TD Avg.,TD Acc.,TD Def.,Sub. Avg.,W,L,D
+Full Name,Height(inches),Weight(lbs),Reach(inches),Stance,DOB,SLpM.,Str.Acc.,SApM,Str.Def,TD Avg.,TD Acc.,TD Def.,Sub. Avg.,Record
 Tom Aaron,N/A,155,N/A,N/A,"Jul 13, 1978",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 5-3-0
 Danny Abbadi,5' 11,155,N/A,Orthodox,"Jul 03, 1983",3.29,38%,4.41,57%,0.00,0%,77%,0.0,Record: 4-6-0
 Nariman Abbasov,5' 8,155,66,Orthodox,"Feb 01, 1994",3.00,20%,5.67,46%,0.00,0%,66%,0.0,Record: 28-4-0
@@ -133,7 +133,6 @@ Lowell Anderson,5' 6,160,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record:
 Corey Anderson,6' 3,205,79,Orthodox,"Sep 22, 1989",4.43,46%,2.22,59%,4.89,50%,83%,0.0,Record: 14-5-0
 Derek Anderson,6' 0,155,N/A,N/A,"Feb 02, 1990",3.97,37%,3.08,61%,0.34,14%,60%,0.0,Record: 14-3-0 (1 NC)
 Megan Anderson,6' 0,145,72,Orthodox,"Feb 11, 1990",1.76,46%,3.35,37%,0.52,25%,53%,0.5,Record: 11-5-0
-Liam Anderson,6' 3,185,75,Orthodox,"Jan 13, 1995",3.00,52%,6.53,31%,1.00,20%,50%,0.0,Record: 6-3-0
 Tatsuya Ando,5' 4,145,68,Southpaw,"Apr 26, 1990",0.93,19%,4.93,50%,0.00,0%,0%,0.0,Record: 14-4-1
 Alex Andrade,5' 11,200,N/A,Orthodox,"May 14, 1974",0.20,36%,2.60,53%,0.00,0%,25%,0.8,Record: 10-5-0
 Jessica Andrade,5' 1,125,62,Orthodox,"Sep 25, 1991",6.44,50%,5.51,54%,2.23,54%,72%,0.3,Record: 26-13-0
@@ -191,7 +190,6 @@ Arman Ashimov,5' 6,125,N/A,N/A,"Jan 14, 1992",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Rec
 Yanal Ashmouz,5' 9,155,69,Orthodox,"Mar 31, 1995",2.94,50%,4.54,55%,4.80,50%,60%,0.0,Record: 8-1-0
 Asjabharan,5' 6,135,N/A,N/A,"Jul 31, 1992",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 7-6-0
 Askar Askar,5' 7,145,69,Orthodox,"Aug 19, 1994",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 11-1-0
-Askar Askarov,5' 6,125,67,Orthodox,"Oct 09, 1992",3.05,54%,2.80,57%,2.60,24%,66%,0.4,Record: 14-1-1
 Cyril Asker,6' 0,247,74,Orthodox,"Dec 24, 1985",3.35,39%,5.82,35%,4.41,62%,100%,0.9,Record: 9-4-0
 Khusein Askhabov,5' 8,145,69,Orthodox,"Feb 13, 1995",2.00,26%,4.13,56%,0.00,0%,66%,0.0,Record: 23-1-0
 Scott Askham,6' 3,185,75,Southpaw,"May 20, 1988",3.03,46%,3.52,52%,0.44,18%,65%,0.7,Record: 14-4-0
@@ -217,7 +215,6 @@ Julia Avila,5' 7,135,68,Orthodox,"May 11, 1988",2.59,43%,2.86,50%,0.54,33%,50%,0
 Saad Awad,5' 11,155,N/A,N/A,"Jun 07, 1983",2.13,26%,1.87,60%,0.50,16%,100%,0.5,Record: 20-9-0
 Javy Ayala,6' 1,265,N/A,N/A,"Aug 20, 1988",0.83,25%,5.00,33%,0.00,0%,0%,0.0,Record: 10-5-0
 Jessin Ayari,6' 0,155,73,Orthodox,"May 31, 1992",3.53,37%,3.59,58%,0.00,0%,50%,0.3,Record: 16-6-0
-Abu Azaitar,5' 9,185,76,Orthodox,"Mar 10, 1986",4.38,43%,4.32,51%,1.00,37%,42%,0.0,Record: 14-4-1
 Ottman Azaitar,5' 8,155,71,Switch,"Feb 20, 1990",4.43,44%,4.11,52%,0.00,0%,100%,0.0,Record: 13-3-0
 Luiz Azeredo,5' 9,154,N/A,Orthodox,"Jun 10, 1976",2.16,39%,2.76,57%,1.07,50%,45%,0.3,Record: 15-10-0
 Luciano Azevedo,6' 3,161,N/A,Orthodox,"Jun 25, 1981",0.76,45%,1.97,27%,2.28,11%,0%,0.0,Record: 17-9-1
@@ -252,18 +249,16 @@ Renan Barao,5' 6,145,70,Orthodox,"Jan 31, 1987",3.78,36%,3.90,57%,1.49,41%,91%,0
 Junior Barata,5' 10,170,N/A,Orthodox,"Jan 25, 1982",4.03,33%,8.46,34%,0.00,0%,0%,0.0,Record: 9-3-1
 Maycee Barber,5' 5,125,65,Switch,"May 18, 1998",4.70,53%,2.90,54%,1.44,43%,53%,0.1,Record: 14-2-0
 Bryan Barberena,6' 0,185,72,Southpaw,"May 03, 1989",5.35,48%,4.59,44%,0.13,22%,50%,0.3,Record: 18-12-0
-Dione Barbosa,5' 6,125,66,Orthodox,"May 08, 1992",1.85,48%,2.49,66%,1.73,28%,42%,2.2,Record: 7-3-0
 Edson Barboza,5' 11,145,75,Orthodox,"Jan 21, 1986",4.11,44%,4.65,56%,0.45,50%,72%,0.1,Record: 24-12-0
 Raoni Barcelos,5' 7,135,67,Orthodox,"May 01, 1987",5.22,51%,4.79,61%,1.86,32%,85%,0.6,Record: 18-5-0
 Daniel Barez,5' 6,125,66,Orthodox,"Dec 10, 1988",4.10,52%,5.05,57%,2.24,31%,92%,0.9,Record: 17-6-0
 Danny Barlow,6' 2,170,79,Southpaw,"Aug 02, 1995",5.72,50%,3.48,52%,0.00,0%,100%,0.0,Record: 9-0-0
 Luke Barnatt,6' 6,185,77,Orthodox,"Apr 13, 1988",4.43,36%,3.87,59%,0.63,42%,63%,0.4,Record: 13-4-0
-James Barnes,5' 8,135,71,Orthodox,"May 28, 1982",0.57,34%,3.02,39%,1.08,16%,40%,0.0,Record: 14-5-0
 Nick Barnes,5' 11,170,N/A,N/A,N/A,2.86,29%,8.93,51%,5.36,100%,100%,5.4,Record: 11-2-0
 Shonte Barnes,5' 11,185,76,Southpaw,"Feb 09, 1987",2.32,38%,1.55,67%,0.00,0%,60%,0.0,Record: 6-2-1
 Josh Barnett,6' 3,250,78,Orthodox,"Nov 10, 1977",3.20,50%,2.11,57%,1.26,55%,55%,1.4,Record: 35-8-0
 Chris Barnett,5' 9,265,75,Orthodox,"Jun 14, 1986",4.21,47%,6.53,39%,0.00,0%,33%,0.0,Record: 23-9-0
-N/A,N/A
+Chris Barnhizer,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 2-3-0
 David Baron,5' 6,155,N/A,Switch,"Feb 15, 1973",1.17,30%,2.10,56%,0.00,0%,14%,0.7,Record: 17-4-1
 Phil Baroni,5' 9,170,72,Orthodox,"Apr 16, 1976",2.77,45%,3.93,40%,1.46,47%,60%,0.5,Record: 15-18-0
 Dan Barrera,5' 9,170,N/A,Orthodox,"Dec 23, 1980",0.80,70%,1.20,28%,1.00,8%,0%,0.0,Record: 3-1-0
@@ -304,7 +299,7 @@ Allan Begosso,5' 5,135,66,Orthodox,"Nov 23, 1995",1.80,40%,7.73,34%,0.00,0%,25%,
 Mirsad Bektic,5' 8,145,70,Orthodox,"Feb 16, 1991",2.43,41%,1.80,57%,3.98,52%,92%,0.4,Record: 13-4-0
 Diana Belbita,5' 7,115,68,Orthodox,"Jun 26, 1996",6.54,42%,6.55,51%,0.91,62%,65%,0.0,Record: 15-9-0
 Alan Belcher,6' 2,185,75,Orthodox,"Apr 24, 1984",2.70,41%,3.10,59%,0.44,26%,55%,0.9,Record: 18-8-0
-N/A,N/A
+Vitor Belfort,6' 0,185,74,Southpaw,"Apr 01, 1977",1.59,46%,2.83,50%,1.02,60%,53%,0.6,Record: 26-14-0 (1 NC)
 Yousri Belgaroui,6' 5,185,79,Orthodox,"Jun 02, 1992",4.43,60%,2.65,57%,0.00,0%,81%,0.0,Record: 8-3-0
 Rodolfo Bellato,6' 3,205,77,Orthodox,"Feb 05, 1996",6.47,61%,5.90,44%,1.09,25%,100%,0.5,Record: 12-2-0
 Danilo Belluardo,6' 0,155,74,Southpaw,"Jul 21, 1994",1.52,61%,4.79,41%,3.50,100%,50%,0.0,Record: 12-5-0
@@ -361,7 +356,6 @@ Jan Blachowicz,6' 2,205,78,Orthodox,"Feb 24, 1983",3.41,50%,2.91,53%,1.09,50%,68
 Jason Black,5' 8,155,N/A,Orthodox,"Jul 15, 1972",1.06,47%,2.60,45%,0.48,33%,28%,6.2,Record: 23-4-1
 Brad Blackburn,5' 10,170,73,Orthodox,"May 25, 1977",4.55,35%,3.59,65%,0.93,50%,76%,0.7,Record: 18-13-1 (1 NC)
 Jason Blackford,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 3-3-0
-Tom Blackledge,N/A,205,N/A,Orthodox,N/A,2.91,61%,2.55,46%,0.00,0%,75%,0.0,Record: 10-7-0
 Sherrard Blackledge,5' 11,155,75,Orthodox,"Aug 16, 1993",3.70,49%,3.13,55%,4.00,33%,42%,0.0,Record: 5-1-0
 Da'Mon Blackshear,5' 10,135,72,Switch,"Aug 12, 1994",4.30,47%,4.06,49%,2.17,37%,68%,1.4,Record: 15-7-1
 Chasen Blair,5' 10,155,71,Orthodox,"Oct 14, 1998",5.27,39%,5.27,59%,0.00,0%,100%,0.0,Record: 6-3-0
@@ -393,7 +387,7 @@ Luc Bondole,6' 2,205,N/A,N/A,N/A,3.35,51%,2.04,62%,0.00,0%,0%,1.8,Record: 5-2-2
 Tony Bonello,6' 2,185,N/A,N/A,N/A,0.62,33%,12.62,10%,0.00,0%,0%,0.0,Record: 16-3-1 (1 NC)
 Gabriel Bonfim,6' 1,170,72,Orthodox,"Aug 20, 1997",5.78,42%,4.38,62%,2.92,75%,73%,1.9,Record: 16-1-0
 Ismael Bonfim,5' 8,155,71,Orthodox,"Dec 28, 1995",5.80,54%,3.16,70%,1.07,33%,76%,0.0,Record: 20-4-0
-N/A,N/A
+Jesse Bongfeldt,6' 0,185,N/A,Orthodox,"Aug 28, 1980",2.91,62%,1.01,50%,1.51,33%,33%,0.0,Record: 16-5-1
 Marcos Bonilla,5' 10,145,N/A,N/A,N/A,0.47,12%,0.47,94%,0.00,0%,0%,0.0,Record: 4-4-0
 Stephan Bonnar,6' 4,205,79,Orthodox,"Apr 04, 1977",2.76,38%,3.01,52%,1.32,40%,60%,1.0,Record: 15-9-0
 Rogerio Bontorin,5' 5,125,67,Orthodox,"Apr 25, 1992",2.63,52%,3.27,50%,2.90,60%,51%,1.0,Record: 16-4-0 (2 NC)
@@ -478,7 +472,6 @@ Junie Browning,5' 9,155,N/A,Orthodox,"May 12, 1984",3.76,48%,1.76,66%,3.53,66%,0
 Jules Bruchez,6' 0,205,N/A,Southpaw,"Aug 16, 1977",0.69,50%,5.52,46%,0.00,0%,0%,0.0,Record: 1-2-0
 Justin Bruckmann,5' 9,170,N/A,Orthodox,N/A,0.59,66%,5.91,16%,0.00,0%,33%,0.0,Record: 7-3-0
 Cody Brundage,6' 0,185,72,Orthodox,"May 16, 1994",1.62,54%,2.63,41%,2.31,50%,68%,0.9,Record: 10-6-0 (1 NC)
-Steve Bruno,5' 10,170,N/A,Orthodox,"Nov 03, 1981",0.96,52%,3.38,36%,1.94,25%,46%,0.4,Record: 15-6-0
 Fernando Bruno,5' 6,145,N/A,N/A,"Feb 24, 1982",1.75,39%,1.78,48%,2.02,22%,56%,0.5,Record: 15-4-0
 Derek Brunson,6' 1,185,77,Southpaw,"Jan 04, 1984",3.51,47%,3.05,51%,3.14,33%,85%,0.6,Record: 23-9-0
 Josh Bryant,5' 10,185,N/A,Orthodox,"Apr 23, 1980",1.10,20%,6.10,43%,0.00,0%,0%,0.0,Record: 15-4-0
@@ -526,7 +519,6 @@ Ian Butler,5' 8,155,N/A,N/A,N/A,2.09,14%,6.69,36%,0.00,0%,50%,0.0,Record: 3-3-0 
 Raphael Butler,6' 3,261,N/A,N/A,"Jan 04, 1984",4.69,45%,0.94,91%,0.00,0%,100%,14.1,Record: 9-2-1
 Jesse Butler,5' 10,135,73,Orthodox,"May 24, 1992",2.02,34%,4.62,39%,0.00,0%,0%,0.0,Record: 12-6-0
 JP Buys,5' 5,135,67,Orthodox,"Apr 30, 1996",1.88,39%,3.02,40%,1.55,25%,25%,2.3,Record: 9-6-0
-Dennis Buzukja,5' 9,145,70,Switch,"Oct 01, 1997",4.21,43%,4.82,48%,0.63,27%,75%,0.2,Record: 12-5-0
 Charles Byrd,5' 10,185,73,Orthodox,"Oct 11, 1983",3.43,55%,2.63,55%,2.50,50%,40%,1.5,Record: 10-7-0
 Steve Byrnes,6' 0,170,N/A,Orthodox,N/A,1.20,51%,2.67,27%,3.00,60%,0%,4.0,Record: 6-1-0
 Michael Byrnes,5' 11,155,N/A,N/A,"Jul 17, 1990",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 5-3-0
@@ -606,9 +598,8 @@ Shane Carwin,6' 2,265,80,Orthodox,"Jan 04, 1975",4.38,47%,3.53,53%,1.42,33%,42%,
 Johnny Case,5' 10,155,72,Orthodox,"Jun 28, 1989",3.95,38%,2.66,61%,1.70,45%,72%,0.2,Record: 22-6-0
 Kevin Casey,5' 11,185,77,Southpaw,"Jun 15, 1981",2.27,53%,3.76,46%,0.79,22%,27%,0.4,Record: 9-5-2 (2 NC)
 Cortney Casey,5' 7,125,67,Orthodox,"May 05, 1987",4.29,39%,4.00,55%,0.39,31%,39%,0.5,Record: 10-10-0
-N/A,N/A
+Brandon Cash,6' 5,255,N/A,Orthodox,N/A,5.42,72%,0.68,33%,10.17,66%,0%,0.0,Record: 10-4-0
 Bendy Casimir,5' 5,145,N/A,Southpaw,"Jun 10, 1980",0.74,27%,3.42,54%,0.00,0%,100%,0.0,Record: 20-14-2
-Dwayne Cason,5' 10,212,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-1-0
 Joe Cason,6' 3,205,N/A,N/A,"Jan 19, 1988",4.17,55%,10.83,23%,0.00,0%,0%,0.0,Record: 9-1-0
 John Castaneda,5' 6,135,71,Switch,"Dec 18, 1991",4.67,50%,5.22,54%,1.79,35%,71%,0.1,Record: 21-7-0
 Eric Castile,5' 8,145,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 3-2-0
@@ -644,7 +635,7 @@ Dan Charles,6' 2,228,N/A,N/A,"Sep 24, 1985",2.82,45%,3.51,44%,0.00,0%,31%,0.0,Re
 Morgan Charriere,5' 8,145,69,Orthodox,"Oct 26, 1995",3.87,51%,3.74,57%,2.47,57%,83%,0.6,Record: 20-10-1
 Ernest Chavez,5' 8,145,70,Orthodox,"Jun 27, 1983",2.79,40%,3.89,59%,0.89,33%,50%,0.0,Record: 10-2-0
 Emilio Chavez,5' 9,145,N/A,N/A,N/A,2.73,48%,1.53,54%,3.00,50%,0%,0.0,Record: 12-9-0
-N/A,N/A
+Danny Chavez,5' 8,145,67,Orthodox,"Mar 14, 1987",2.86,38%,3.83,50%,1.95,60%,87%,0.0,Record: 11-5-1
 Gabriel Checco,6' 1,185,N/A,Switch,"Apr 03, 1986",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 10-2-0
 Albert Cheng,5' 11,170,N/A,Orthodox,"Feb 07, 1985",1.00,41%,2.60,71%,0.00,0%,0%,0.0,Record: 7-4-0
 Fabio Cherant,6' 1,205,74,Southpaw,"Nov 25, 1994",1.35,40%,4.89,38%,0.00,0%,0%,0.0,Record: 7-4-0
@@ -658,7 +649,6 @@ Sako Chivitchian,5' 11,155,N/A,Orthodox,"Mar 11, 1984",2.40,27%,4.80,46%,0.00,0%
 Mu Bae Choi,6' 2,230,N/A,Orthodox,"Jun 27, 1970",1.55,49%,3.65,44%,3.12,75%,60%,1.0,Record: 12-6-0
 Hong Man Choi,7' 2,330,N/A,Orthodox,"Oct 30, 1980",1.32,26%,1.46,36%,0.71,100%,84%,0.0,Record: 4-5-0
 Dooho Choi,5' 10,145,70,Orthodox,"Apr 10, 1991",4.67,56%,4.02,56%,1.43,53%,47%,0.6,Record: 16-4-1
-SeungWoo Choi,6' 0,145,74,Orthodox,"Nov 03, 1992",3.51,39%,3.12,47%,0.86,54%,70%,0.0,Record: 11-7-0
 SeungGuk Choi,5' 6,125,64,Orthodox,"Dec 26, 1996",2.69,42%,2.69,65%,1.02,27%,74%,0.0,Record: 7-3-0
 DongHun Choi,5' 5,125,66,Switch,"Jan 02, 1999",4.54,66%,3.13,58%,0.46,14%,81%,0.0,Record: 9-0-0
 John Cholish,5' 11,155,74,Orthodox,"Dec 17, 1983",2.65,49%,2.29,73%,1.82,31%,78%,0.4,Record: 8-3-0
@@ -940,7 +930,7 @@ Russell Doane,5' 7,135,70,Orthodox,"Aug 13, 1986",1.75,40%,1.68,53%,2.11,45%,52%
 Drew Dober,5' 8,155,70,Southpaw,"Oct 19, 1988",4.39,40%,4.25,51%,0.67,17%,56%,0.1,Record: 27-14-0 (1 NC)
 Shana Dobson,5' 6,125,69,Orthodox,"Mar 30, 1989",3.34,37%,5.20,50%,0.84,50%,14%,0.0,Record: 4-5-0
 AJ Dobson,6' 1,185,76,Orthodox,"Jan 18, 1992",4.29,46%,5.31,46%,1.67,75%,65%,0.3,Record: 7-3-0 (1 NC)
-N/A,N/A
+David Dodd,6' 2,200,N/A,Orthodox,"Sep 22, 1973",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 4-7-0
 John Dodson,5' 3,135,66,Orthodox,"Sep 26, 1984",3.20,40%,3.58,61%,0.71,28%,82%,0.0,Record: 22-12-0
 Joe Doerksen,6' 0,185,75,Orthodox,"Oct 09, 1977",1.43,42%,2.79,50%,2.02,33%,33%,2.3,Record: 51-16-0
 Mike Dolce,5' 11,185,N/A,N/A,"Apr 15, 1976",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 5-10-0
@@ -981,8 +971,7 @@ Dricus Du Plessis,6' 1,185,76,Switch,"Jan 14, 1994",6.18,49%,4.85,54%,3.04,50%,5
 Hugo Duarte,6' 0,240,N/A,Orthodox,"Aug 09, 1968",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 6-3-0
 Antonio Duarte,5' 7,135,N/A,N/A,N/A,4.55,40%,4.18,57%,0.00,0%,60%,0.0,Record: 19-7-0
 Joe Duarte,N/A,155,N/A,N/A,"Jan 25, 1977",2.27,38%,4.00,53%,3.00,50%,69%,1.0,Record: 10-4-0
-Yuneisy Duben,5' 4,125,65,Orthodox,"Jul 08, 1996",20.55,64%,11.51,41%,0.00,0%,0%,0.0,Record: 6-0-0 (1 NC)
-N/A,N/A
+Matthieu Duclos,6' 3,185,77,Orthodox,"Apr 04, 1995",3.93,37%,6.81,46%,0.00,0%,100%,0.0,Record: 6-3-0
 Emily Ducote,5' 2,115,63,Orthodox,"Jan 01, 1994",7.45,52%,7.84,57%,0.20,14%,94%,0.0,Record: 13-9-0
 Viktoriia Dudakova,5' 5,115,67,Orthodox,"Jan 26, 1999",3.45,48%,3.77,49%,2.63,36%,50%,0.0,Record: 8-1-0
 Milana Dudieva,5' 3,135,N/A,Orthodox,"Aug 04, 1989",0.87,31%,3.43,58%,2.34,45%,0%,0.0,Record: 11-6-0
@@ -995,14 +984,12 @@ Jessamyn Duke,5' 11,135,73,Orthodox,"Jun 24, 1986",4.83,53%,4.43,57%,1.27,36%,50
 Islam Dulatov,6' 3,170,75,Orthodox,"Aug 02, 1998",14.27,56%,5.49,51%,5.49,100%,0%,0.0,Record: 11-1-0
 Isaac Dulgarian,5' 7,145,71,Orthodox,"Jul 04, 1996",3.37,64%,1.82,41%,5.15,52%,0%,2.1,Record: 7-1-0
 Kelly Dullanty,5' 8,155,N/A,Orthodox,"Nov 04, 1977",0.00,0%,0.67,75%,0.00,0%,66%,0.0,Record: 4-2-0
-Sedriques Dumas,6' 2,185,79,Orthodox,"Aug 06, 1995",2.15,48%,2.03,58%,1.31,35%,40%,0.3,Record: 10-2-0
 Norma Dumont,5' 7,135,67,Orthodox,"Oct 01, 1990",3.86,50%,2.16,65%,1.72,56%,72%,0.0,Record: 12-2-0
 Chris Duncan,5' 10,155,71,Orthodox,"May 10, 1993",4.70,46%,4.00,48%,3.53,37%,33%,0.3,Record: 12-2-0
 Christian Leroy Duncan,6' 2,185,79,Switch,"Jul 24, 1995",4.71,62%,3.57,49%,0.31,14%,64%,0.0,Record: 10-2-0
 Evan Dunham,5' 10,155,70,Southpaw,"Dec 18, 1981",5.33,39%,3.54,61%,1.82,33%,79%,1.0,Record: 18-9-1
 Alex Dunworth,5' 8,155,N/A,N/A,N/A,1.94,31%,8.71,35%,0.00,0%,50%,0.0,Record: 2-2-0 (1 NC)
 Tom Duquesnoy,5' 7,135,68,Orthodox,"Jun 21, 1993",3.83,45%,5.30,62%,0.42,25%,46%,0.0,Record: 16-2-0 (1 NC)
-Albert Duraev,5' 11,185,75,Orthodox,"Jan 05, 1989",2.99,40%,3.01,59%,1.97,29%,66%,0.6,Record: 16-5-0
 Reuben Duran,5' 7,135,71,Orthodox,"Jul 02, 1983",3.19,49%,2.61,50%,0.98,23%,25%,0.7,Record: 11-7-1
 Cody Durden,5' 7,125,67,Southpaw,"Mar 29, 1991",3.52,45%,4.29,49%,4.06,47%,73%,0.8,Record: 17-7-1
 Luiz Dutra,5' 11,170,N/A,Orthodox,"May 06, 1982",3.92,50%,4.80,41%,0.00,0%,100%,0.0,Record: 13-6-1
@@ -1022,7 +1009,6 @@ Ross Ebanez,5' 9,154,N/A,Southpaw,"May 18, 1975",0.74,50%,0.74,62%,3.70,100%,0%,
 Brian Ebersole,6' 0,170,73,Southpaw,"Nov 27, 1980",2.32,49%,2.14,56%,1.70,23%,61%,0.1,Record: 51-18-1 (1 NC)
 Roybert Echeverria,5' 5,125,67,Switch,"Aug 21, 1995",2.95,53%,2.52,57%,0.00,0%,71%,2.6,Record: 7-1-0
 Mark Eddiva,5' 8,145,68,Orthodox,"Feb 16, 1986",3.37,45%,2.98,54%,1.45,22%,63%,0.0,Record: 6-3-0
-Frankie Edgar,5' 6,135,68,Orthodox,"Oct 16, 1981",3.77,40%,2.82,65%,2.29,31%,65%,0.3,Record: 23-11-1
 Abdul-Kerim Edilov,6' 2,205,N/A,Orthodox,"Nov 25, 1991",10.22,61%,0.13,92%,3.98,100%,0%,2.0,Record: 17-4-0
 Johnny Eduardo,5' 7,135,71,Orthodox,"Aug 03, 1978",2.95,39%,3.22,63%,0.22,20%,58%,0.4,Record: 28-13-0
 Yves Edwards,5' 9,155,73,Southpaw,"Sep 30, 1976",2.91,42%,2.34,66%,0.76,53%,69%,0.7,Record: 42-22-1 (1 NC)
@@ -1068,7 +1054,6 @@ Ian Entwistle,5' 5,135,N/A,Orthodox,"Nov 19, 1986",0.11,7%,7.36,31%,0.00,0%,0%,1
 Andy Enz,6' 3,185,78,Orthodox,"Aug 15, 1991",3.51,23%,5.32,57%,0.00,0%,58%,0.0,Record: 10-4-0
 Won Jin Eoh,5' 7,160,N/A,Orthodox,N/A,3.74,44%,3.58,46%,0.00,0%,50%,0.0,Record: 5-5-1
 Josh Epps,N/A,130,N/A,N/A,"Aug 23, 1986",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 6-7-0
-Abdellah Er-Ramy,6' 0,185,74,Orthodox,"Sep 19, 1996",0.00,0%,8.40,0%,0.00,0%,0%,0.0,Record: 7-2-0
 Steve Erceg,5' 8,125,68,Orthodox,"Jul 27, 1995",4.37,48%,4.22,53%,1.16,26%,60%,0.5,Record: 12-3-0
 Tom Erikson,6' 3,280,N/A,Orthodox,N/A,0.94,47%,1.87,25%,4.68,60%,100%,6.2,Record: 9-4-1
 Konstantin Erokhin,5' 11,230,N/A,Orthodox,"Jan 31, 1983",1.07,36%,1.83,47%,0.00,0%,70%,0.0,Record: 9-3-0
@@ -1142,7 +1127,6 @@ Alexandre Ferreira,5' 7,205,N/A,Orthodox,"Apr 25, 1979",2.57,60%,8.14,42%,0.00,0
 Cezar Ferreira,6' 1,185,78,Southpaw,"Feb 15, 1985",1.90,42%,2.44,53%,2.69,53%,84%,0.5,Record: 13-8-0
 Diego Ferreira,5' 9,155,74,Orthodox,"Jan 18, 1985",5.04,39%,3.43,56%,0.96,30%,60%,0.6,Record: 19-5-0
 Erisson Ferreira,5' 6,125,70,Orthodox,"May 03, 1991",1.75,32%,2.75,56%,1.11,100%,66%,1.7,Record: 12-2-0
-Brunno Ferreira,5' 10,185,72,Orthodox,"Nov 04, 1992",3.76,50%,3.12,52%,0.50,16%,53%,0.5,Record: 12-2-0
 Scott Ferrozzo,5' 11,323,N/A,Orthodox,"Apr 26, 1965",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 4-2-0
 Timo Feucht,6' 3,205,79,Orthodox,"Jan 18, 1996",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 8-1-0
 Andre Fialho,6' 0,170,74,Orthodox,"Apr 07, 1994",3.30,41%,6.26,45%,0.25,100%,66%,0.0,Record: 16-8-0 (1 NC)
@@ -1262,7 +1246,6 @@ Daniel Gallemore,6' 5,265,N/A,N/A,N/A,3.10,41%,6.00,52%,0.00,0%,0%,0.0,Record: 7
 Tom Gallicchio,5' 10,170,N/A,Southpaw,"Sep 23, 1986",3.53,26%,7.07,43%,1.00,11%,0%,0.0,Record: 19-10-0
 Turrell Galloway,5' 3,145,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 8-6-0
 Eric Galvan,N/A,155,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-0-0
-Andre Galvao,5' 7,168,N/A,Orthodox,"Sep 29, 1982",2.34,52%,1.56,58%,2.02,27%,0%,2.8,Record: 5-2-0
 Marcos Galvao,5' 7,135,N/A,Orthodox,"Jun 23, 1981",1.97,32%,3.86,61%,2.27,28%,88%,1.1,Record: 18-8-1
 Lucas Gamaza,N/A,170,N/A,N/A,N/A,7.57,31%,6.99,45%,0.00,0%,0%,0.0,Record: 8-4-0
 Joey Gambino,5' 7,145,N/A,Orthodox,"Oct 26, 1988",2.47,35%,2.53,51%,0.00,0%,42%,0.8,Record: 9-2-0
@@ -1309,7 +1292,7 @@ Tiki Ghosn,5' 10,170,N/A,Orthodox,"Feb 09, 1977",2.78,46%,2.94,58%,0.41,50%,61%,
 Christos Giagos,5' 10,155,71,Orthodox,"Jan 23, 1990",3.03,41%,3.21,50%,2.84,36%,52%,0.4,Record: 20-12-0
 Joe Giannetti,6' 0,155,74,Southpaw,"Jul 05, 1995",1.93,38%,2.80,40%,1.00,16%,0%,0.0,Record: 6-1-0
 Nick Gibbons,5' 10,155,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 2-1-0
-N/A,N/A
+James Giboo,5' 11,170,N/A,Orthodox,"Jan 06, 1978",1.20,27%,7.08,39%,0.00,0%,0%,0.0,Record: 13-5-0
 Lance Gibson,5' 9,185,N/A,Orthodox,"Nov 20, 1970",1.21,75%,6.44,20%,0.00,0%,0%,0.0,Record: 4-5-0
 Lee Gibson,5' 7,155,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 12-4-0
 Cody Gibson,5' 10,135,71,Orthodox,"Sep 11, 1987",3.47,44%,3.36,57%,2.18,40%,68%,0.7,Record: 22-10-0
@@ -1331,7 +1314,6 @@ Eperaim Ginting,5' 4,135,64,Orthodox,"Nov 30, 1995",0.00,0%,0.00,100%,15.52,100%
 Demetrius Gioulacos,5' 11,185,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-1-0
 Billy Giovanella,5' 8,125,N/A,N/A,"Aug 20, 1985",1.27,40%,2.02,52%,0.87,12%,100%,1.7,Record: 9-5-0
 He-Man Gipson,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-2-0
-Israel Giron,5' 8,155,N/A,N/A,"Jan 16, 1974",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 19-5-0
 Brandon Girtz,5' 7,155,N/A,N/A,"Mar 06, 1985",2.50,60%,1.92,47%,5.76,100%,100%,0.0,Record: 14-7-0
 Jason Glaza,6' 0,230,N/A,N/A,N/A,4.34,54%,0.43,40%,4.34,100%,0%,4.3,Record: 3-2-0
 Mike Glenn,N/A,205,N/A,N/A,"Oct 09, 1977",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 5-6-0
@@ -1600,7 +1582,7 @@ Jimy Hettes,5' 9,145,71,Southpaw,"Jun 09, 1987",3.47,57%,3.50,57%,5.20,44%,61%,1
 Conor Heun,5' 10,155,N/A,Orthodox,"Feb 11, 1979",2.92,36%,3.66,54%,2.45,31%,33%,0.3,Record: 9-5-0
 Marcus Hicks,5' 6,155,64,Southpaw,"Nov 25, 1975",1.42,43%,3.06,61%,2.70,53%,25%,4.0,Record: 10-4-0 (1 NC)
 Jay Hieron,6' 0,170,75,Orthodox,"Jul 29, 1976",1.66,32%,1.89,61%,4.05,60%,66%,1.0,Record: 23-7-0
-N/A,N/A
+Brady Hiestand,5' 8,135,71,Orthodox,"Apr 30, 1999",2.70,50%,3.75,51%,4.80,46%,42%,1.1,Record: 9-2-0
 Lee Higgins,N/A,155,N/A,N/A,"Jul 14, 1980",1.02,26%,3.68,40%,0.00,0%,0%,0.0,Record: 2-1-0
 Jason High,5' 8,155,73,Southpaw,"Oct 12, 1981",1.28,42%,1.56,48%,2.36,63%,37%,2.8,Record: 21-6-0
 Richie Hightower,5' 8,170,N/A,Orthodox,"Nov 26, 1974",4.62,35%,6.92,21%,3.46,100%,100%,0.0,Record: 8-4-0 (1 NC)
@@ -1637,7 +1619,7 @@ Joseph Holmes,6' 4,185,80,Orthodox,"Jul 04, 1995",2.88,53%,3.08,54%,1.49,40%,50%
 Kurt Holobaugh,5' 11,155,70,Orthodox,"Sep 08, 1986",4.63,45%,4.35,47%,0.76,33%,42%,0.8,Record: 22-8-0 (1 NC)
 Paddy Holohan,5' 10,125,69,Orthodox,"May 03, 1988",2.13,46%,2.81,46%,2.88,47%,71%,1.3,Record: 12-2-1
 Ben Holscher,5' 11,155,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 4-0-0
-N/A,N/A
+Mark Holst,6' 0,155,N/A,Orthodox,"Aug 14, 1985",0.25,19%,1.67,47%,0.76,100%,60%,2.3,Record: 12-6-0
 Scott Holtzman,5' 9,155,69,Orthodox,"Sep 30, 1983",4.32,47%,3.66,55%,1.88,56%,67%,0.2,Record: 14-6-0
 Sabah Homasi,6' 0,170,72,Orthodox,"Oct 19, 1988",4.98,48%,6.91,47%,2.80,50%,66%,0.0,Record: 11-8-0
 Mark Hominick,5' 8,145,68,Orthodox,"Jul 22, 1982",4.08,42%,4.18,69%,0.25,66%,71%,0.9,Record: 20-12-0
@@ -1718,7 +1700,6 @@ Egan Inoue,5' 9,190,N/A,Southpaw,"Jul 04, 1965",1.66,36%,3.31,57%,0.00,0%,0%,0.0
 Katsuya Inoue,5' 9,168,N/A,Southpaw,"Aug 10, 1979",3.41,24%,12.89,51%,0.00,0%,66%,0.0,Record: 19-9-4
 Takeshi Inoue,5' 8,145,N/A,N/A,"Mar 18, 1980",2.54,44%,3.32,61%,0.00,0%,47%,0.0,Record: 23-10-0
 Naoki Inoue,5' 9,125,71,Orthodox,"Jun 14, 1997",3.67,35%,3.37,60%,0.00,0%,60%,2.5,Record: 11-1-0
-Jorge Interiano,6' 1,205,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 4-3-0
 Jason Ireland,5' 9,161,N/A,Southpaw,"Dec 30, 1979",1.20,25%,2.07,51%,3.59,75%,0%,1.2,Record: 19-9-1
 James Irvin,6' 2,205,75,Orthodox,"Sep 12, 1978",2.03,48%,3.86,35%,0.00,0%,36%,0.5,Record: 17-10-0 (2 NC)
 Eric Irvin,5' 8,155,N/A,N/A,"Jan 10, 1986",3.27,42%,4.47,36%,4.00,30%,33%,0.0,Record: 11-4-0
@@ -1729,7 +1710,7 @@ Satoshi Ishii,5' 11,240,N/A,Orthodox,"Dec 19, 1986",1.41,36%,1.58,63%,3.47,52%,1
 Yuki Ishikawa,5' 11,205,N/A,Orthodox,N/A,1.07,28%,8.57,11%,0.00,0%,50%,0.0,Record: 0-2-0
 Eiji Ishikawa,5' 10,170,N/A,N/A,"Oct 12, 1979",1.20,29%,4.07,60%,1.00,9%,0%,0.0,Record: 29-24-3
 Tokimitsu Ishizawa,6' 0,185,N/A,Orthodox,"Aug 05, 1968",1.34,30%,2.99,59%,2.74,18%,0%,0.0,Record: 1-5-1
-N/A,N/A
+Damir Ismagulov,5' 10,155,74,Orthodox,"Feb 03, 1991",3.36,42%,2.44,61%,1.00,28%,70%,0.0,Record: 24-3-0
 Wallid Ismail,5' 7,205,N/A,Orthodox,"Feb 23, 1968",0.92,31%,0.83,44%,1.85,28%,0%,0.5,Record: 9-3-0
 Leandro Issa,5' 7,135,69,Orthodox,"Sep 19, 1983",2.08,37%,3.17,58%,2.38,22%,50%,1.2,Record: 13-6-0
 Blagoy Ivanov,5' 11,250,73,Southpaw,"Oct 09, 1986",3.25,40%,4.20,53%,0.69,40%,61%,0.1,Record: 19-6-0 (1 NC)
@@ -1742,7 +1723,6 @@ Yoislandy Izquierdo,5' 11,155,N/A,Southpaw,"Jan 09, 1984",2.93,52%,1.40,26%,0.00
 Hiroshi Izumi,N/A,205,N/A,Orthodox,"Jun 22, 1982",1.95,37%,2.65,66%,3.35,70%,100%,0.5,Record: 4-2-0
 Yves Jabouin,5' 7,135,68,Orthodox,"May 30, 1979",3.06,41%,2.93,62%,1.94,60%,82%,0.1,Record: 20-11-0
 Kevin Jackson,5' 10,199,N/A,Switch,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 4-2-0
-Eugene Jackson,5' 8,185,N/A,Orthodox,"Sep 23, 1966",2.19,33%,3.44,32%,1.91,71%,16%,2.3,Record: 15-9-1
 Quinton Jackson,6' 1,205,73,Orthodox,"Jun 20, 1978",3.25,54%,2.51,55%,1.52,56%,73%,0.1,Record: 37-12-0
 Jeremy Jackson,5' 10,170,N/A,Orthodox,"Sep 19, 1982",0.71,27%,2.03,25%,1.52,40%,58%,0.0,Record: 9-5-0
 Damon Jackson,5' 11,155,71,Switch,"Aug 08, 1988",2.96,42%,3.47,49%,2.30,32%,37%,1.2,Record: 23-8-1 (1 NC)
@@ -1773,7 +1753,6 @@ Joanna Jedrzejczyk,5' 6,115,65,Orthodox,"Aug 18, 1987",6.28,48%,3.25,62%,0.27,62
 Aaron Jeffery,6' 2,185,73,Orthodox,"Nov 14, 1992",3.10,45%,4.46,34%,0.00,0%,50%,0.0,Record: 10-3-0
 Trent Jenkins,6' 2,185,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-4-0
 Bubba Jenkins,5' 7,145,N/A,N/A,"Feb 05, 1988",2.41,37%,1.58,67%,7.23,68%,100%,0.0,Record: 11-4-0
-Adrienna Jenkins,5' 8,145,N/A,N/A,"Jul 22, 1981",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 19-6-0
 Brandon Jenkins,6' 0,155,71,Switch,"Sep 30, 1991",2.93,41%,8.05,33%,0.00,0%,27%,0.0,Record: 15-9-0
 Jack Jenkins,5' 7,145,68,Switch,"Nov 03, 1993",4.83,60%,2.92,61%,2.12,69%,76%,0.0,Record: 13-3-0
 Steve Jennum,5' 10,215,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 2-3-0
@@ -1890,7 +1869,6 @@ Ernesta Kareckaite,5' 9,125,71,Orthodox,"Jul 05, 1998",7.90,42%,6.90,43%,1.00,66
 Impa Kasanganay,5' 11,170,75,Orthodox,"Jan 17, 1994",4.96,48%,3.66,58%,1.75,58%,66%,0.2,Record: 9-2-0
 Jinnosuke Kashimura,5' 7,155,71,Southpaw,"Aug 12, 2001",0.21,50%,7.37,25%,3.16,100%,0%,6.3,Record: 4-2-0
 Nadia Kassem,5' 5,125,66,Southpaw,"Nov 15, 1995",3.13,41%,4.48,48%,0.46,33%,40%,2.8,Record: 5-2-0
-Yusuke Kasuya,5' 7,155,N/A,Southpaw,"Nov 16, 1989",2.17,44%,4.34,48%,1.36,33%,0%,0.0,Record: 9-3-0
 Tetsuji Kato,N/A,155,N/A,Orthodox,N/A,1.20,29%,2.10,70%,2.00,57%,80%,0.5,Record: 20-10-0
 Hisaki Kato,6' 0,185,N/A,N/A,"Sep 17, 1982",2.80,48%,1.72,68%,1.62,100%,0%,0.0,Record: 8-2-0
 Brad Katona,5' 6,135,64,Orthodox,"Dec 19, 1991",4.84,52%,4.73,50%,1.88,34%,61%,0.0,Record: 16-4-0
@@ -1920,7 +1898,7 @@ Jeremy Kennedy,5' 11,145,71,Orthodox,"Sep 16, 1992",2.22,46%,2.58,47%,5.73,52%,6
 Waylon Kennell,6' 0,185,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 6-2-0
 Casey Kenney,5' 7,135,68,Southpaw,"Mar 20, 1991",4.85,42%,4.67,58%,1.09,35%,61%,0.4,Record: 16-4-1
 Maimaitituoheti Keremuaili,5' 6,135,66,Orthodox,"Mar 18, 1991",1.47,52%,1.67,37%,1.00,33%,84%,0.0,Record: 26-11-0
-N/A,N/A
+Aurelijus Kerpe,N/A,N/A,N/A,Orthodox,N/A,1.26,16%,8.21,31%,0.00,0%,0%,0.0,Record: 11-22-0
 Mark Kerr,6' 3,266,N/A,Switch,"Dec 21, 1968",0.28,41%,0.89,28%,2.92,77%,0%,0.4,Record: 15-11-0 (1 NC)
 Will Kerr,5' 10,155,69,Orthodox,"Oct 21, 1982",1.91,42%,6.22,33%,0.00,0%,0%,14.3,Record: 9-3-0
 Ron Keslar,N/A,185,N/A,N/A,N/A,0.00,0%,2.05,60%,0.00,0%,100%,7.7,Record: 11-9-0
@@ -2238,7 +2216,7 @@ Stevie Lynch,5' 10,170,N/A,Orthodox,N/A,2.47,25%,7.06,41%,0.00,0%,0%,0.0,Record:
 Adam Lynn,5' 10,155,N/A,Orthodox,N/A,1.47,63%,6.95,10%,0.00,0%,50%,0.0,Record: 17-10-0 (1 NC)
 Chris Lytle,5' 11,170,68,Orthodox,"Aug 18, 1974",3.76,45%,3.03,58%,0.70,55%,55%,2.4,Record: 31-18-5
 Dong Hyun Ma,5' 11,155,70,Orthodox,"Sep 09, 1988",2.84,41%,4.10,54%,1.27,53%,33%,0.0,Record: 16-11-3
-N/A,N/A
+Pawan Maan,5' 7,155,70,Orthodox,"Apr 06, 1986",0.89,44%,2.98,43%,0.00,0%,0%,0.0,Record: 7-3-1
 William Macario,5' 11,170,75,Orthodox,"Jul 01, 1991",4.92,54%,3.96,65%,1.85,45%,78%,0.0,Record: 9-3-0
 Jason MacDonald,6' 3,185,80,Orthodox,"Jun 03, 1975",1.55,52%,2.70,46%,1.43,16%,35%,2.0,Record: 25-16-0
 Rob MacDonald,6' 3,205,78,Orthodox,"Sep 05, 1978",1.80,50%,2.04,46%,7.19,80%,80%,5.4,Record: 5-4-0
@@ -2250,7 +2228,6 @@ Valesca Machado,5' 4,115,63,Orthodox,"May 06, 1996",2.40,32%,2.87,64%,0.00,0%,76
 Caio Machado,6' 4,250,78,Southpaw,"Jul 20, 1994",5.82,53%,2.87,63%,0.00,0%,82%,0.0,Record: 8-4-1
 Ian Machado Garry,6' 3,170,74,Orthodox,"Nov 17, 1997",4.72,54%,2.82,51%,0.74,54%,73%,0.5,Record: 15-1-0
 Lyoto Machida,6' 1,185,74,Southpaw,"May 30, 1978",2.59,53%,1.57,61%,1.21,65%,75%,0.4,Record: 24-8-0
-War Machine,5' 11,170,N/A,Orthodox,"Nov 30, 1981",2.32,60%,3.17,43%,1.16,50%,40%,0.0,Record: 14-5-0
 Anthony Macias,5' 9,185,N/A,Switch,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 26-18-0
 Pauline Macias,5' 4,115,64,Southpaw,"Jun 27, 1988",0.80,29%,4.60,42%,2.00,18%,0%,0.0,Record: 4-1-0
 Reza Madadi,5' 11,155,73,Orthodox,"Jun 20, 1978",2.51,46%,3.31,66%,3.17,33%,89%,0.5,Record: 14-6-0
@@ -2263,7 +2240,6 @@ Yoshiro Maeda,5' 7,139,68,Southpaw,"Oct 31, 1981",2.36,33%,2.55,63%,2.93,51%,50%
 Leonardo Mafra,5' 10,155,70,Orthodox,"Apr 25, 1989",4.55,48%,4.38,43%,2.12,83%,69%,0.4,Record: 13-4-0
 Vinny Magalhaes,6' 3,205,75,Orthodox,"Jul 02, 1984",2.14,24%,3.97,68%,1.55,44%,66%,0.8,Record: 14-9-0 (1 NC)
 Vinicius Magalhaes,N/A,145,N/A,N/A,"Jul 30, 1971",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 2-1-0
-Caio Magalhaes,6' 1,185,73,Orthodox,"Dec 14, 1987",2.27,40%,2.78,56%,1.05,15%,58%,1.6,Record: 10-3-0
 Bernardo Magalhaes,5' 9,155,N/A,Orthodox,"Apr 08, 1981",1.80,27%,3.37,68%,0.00,0%,0%,0.5,Record: 13-4-0
 Eric Magana,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-1-0
 Brandon Magana,N/A,170,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 6-2-0
@@ -2361,7 +2337,7 @@ Wagner da Conceicao Martins,6' 7,390,N/A,Orthodox,"May 19, 1978",1.91,37%,5.43,4
 Adriano Martins,5' 10,155,72,Southpaw,"Dec 16, 1982",1.80,38%,2.14,65%,0.83,80%,81%,0.4,Record: 28-9-0
 Lucas Martins,6' 0,145,72,Southpaw,"Nov 11, 1988",2.87,35%,4.14,60%,0.00,0%,76%,0.5,Record: 19-3-0
 Max Martyniouk,N/A,155,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-1-0
-N/A,N/A
+Bristol Marunde,6' 1,170,75,Orthodox,"Apr 20, 1982",1.42,21%,4.40,47%,1.60,33%,14%,0.0,Record: 16-10-0
 Shoji Maruyama,5' 7,139,N/A,Orthodox,"Apr 24, 1983",1.40,63%,0.27,55%,0.00,0%,54%,0.0,Record: 12-9-1
 Kazuma Maruyama,5' 11,155,72,Orthodox,"Jul 19, 1992",3.83,41%,2.23,53%,4.79,33%,100%,0.0,Record: 11-7-0
 Islem Masraf,6' 0,205,74,Southpaw,"Jun 07, 1996",0.68,20%,3.88,15%,0.00,0%,100%,0.0,Record: 3-1-0
@@ -2383,7 +2359,6 @@ Connor Matthews,5' 8,145,71,Switch,"May 31, 1992",5.30,44%,6.19,56%,2.97,53%,50%
 Claudio Mattos,N/A,185,N/A,Orthodox,N/A,0.00,0%,3.53,0%,0.00,0%,0%,0.0,Record: 5-4-0
 John Matua,6' 2,400,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-4-0
 Francesco Maturi,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-1-0
-Vladimir Matyushenko,6' 0,205,74,Orthodox,"Jan 04, 1971",1.90,44%,1.62,59%,3.25,46%,70%,0.1,Record: 27-8-0
 Miranda Maverick,5' 3,125,65,Southpaw,"Jul 01, 1997",3.39,45%,2.31,60%,2.39,41%,44%,0.3,Record: 17-5-0
 Nick Maximov,6' 0,185,76,Southpaw,"Dec 23, 1997",1.93,45%,2.64,46%,4.16,45%,35%,0.2,Record: 8-2-0
 Elaina Maxwell,5' 8,145,N/A,Orthodox,"Dec 16, 1978",2.07,60%,2.40,53%,0.00,0%,50%,1.0,Record: 7-4-0
@@ -2605,7 +2580,6 @@ Anthony Morrison,5' 7,145,N/A,Orthodox,"Mar 29, 1984",1.70,33%,0.49,80%,0.00,0%,
 Jack Morrison,5' 11,205,N/A,N/A,N/A,0.00,0%,19.31,40%,0.00,0%,0%,0.0,Record: 0-3-0
 Harry Moskowitz,6' 5,275,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 6-12-0
 Carlos Mota,5' 4,125,69,Orthodox,"Apr 15, 1995",0.80,41%,1.13,54%,0.00,0%,50%,1.0,Record: 8-2-0
-Miki Motono,5' 2,115,63,Southpaw,"May 18, 1994",1.27,27%,4.20,57%,3.00,30%,0%,1.0,Record: 8-5-0
 Juan Mott,6' 0,190,N/A,Switch,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 3-4-0
 Nikolas Motta,5' 9,155,70,Orthodox,"Feb 08, 1993",3.64,37%,4.50,56%,0.00,0%,82%,0.0,Record: 15-5-0 (1 NC)
 Flavio Luiz Moura,5' 11,183,N/A,Open Stance,N/A,0.67,16%,0.00,0%,0.00,0%,0%,0.0,Record: 19-7-0
@@ -2822,7 +2796,6 @@ Alan Omer,5' 10,145,N/A,Orthodox,"Sep 14, 1988",3.49,55%,2.21,64%,1.69,42%,66%,0
 Daniel Omielanczuk,6' 0,247,74,Southpaw,"Aug 31, 1982",3.09,57%,3.29,47%,0.56,26%,68%,0.1,Record: 19-8-1 (1 NC)
 Michihiro Omigawa,5' 6,145,68,Orthodox,"Dec 19, 1975",2.01,39%,3.06,64%,1.19,36%,49%,1.5,Record: 17-14-1
 David Onama,5' 11,145,74,Orthodox,"Jun 07, 1994",5.60,50%,5.07,52%,0.73,20%,52%,0.6,Record: 13-2-0
-Charlie Ontiveros,6' 2,155,74,Switch,"Jul 04, 1991",1.89,41%,5.86,31%,0.00,0%,30%,0.0,Record: 11-9-0
 Chibwikem Onyenegecha,6' 3,185,N/A,Orthodox,"Apr 18, 1994",5.60,55%,3.40,52%,0.00,0%,100%,0.0,Record: 5-0-0
 Myktybek Orolbai,5' 10,155,74,Orthodox,"Feb 10, 1998",3.42,48%,3.39,49%,5.36,43%,40%,0.4,Record: 13-2-1
 Sam Oropeza,6' 2,170,N/A,N/A,N/A,7.68,56%,1.44,70%,3.60,33%,100%,0.0,Record: 13-3-0
@@ -2955,7 +2928,7 @@ Michel Pereira,6' 1,185,73,Orthodox,"Oct 06, 1993",4.46,53%,4.23,52%,1.27,52%,76
 Alex Pereira,6' 4,205,79,Orthodox,"Jul 07, 1987",5.46,63%,3.44,55%,0.14,100%,70%,0.3,Record: 12-2-0
 Daniel Pereira,5' 10,185,N/A,N/A,"Dec 13, 1990",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 9-2-0
 Luciano Pereira,N/A,125,N/A,Orthodox,"Jan 09, 2001",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 13-1-0
-N/A,N/A
+Rolando Perez,5' 8,135,N/A,Orthodox,N/A,4.23,36%,4.83,63%,0.00,0%,100%,0.0,Record: 7-5-2
 Philip Perez,5' 5,155,N/A,Southpaw,N/A,1.36,100%,0.68,66%,10.23,100%,0%,10.2,Record: 7-5-1 (2 NC)
 Erik Perez,5' 8,135,68,Orthodox,"Nov 19, 1989",3.16,40%,2.09,66%,3.16,55%,69%,0.2,Record: 17-6-0
 Alejandro Perez,5' 6,135,67,Orthodox,"Sep 02, 1989",3.45,35%,3.18,61%,0.54,22%,70%,0.3,Record: 23-9-1
@@ -3059,7 +3032,6 @@ Joe Proctor,5' 10,155,72,Orthodox,"Aug 10, 1985",3.39,36%,3.93,59%,0.00,0%,70%,1
 Cole Province,5' 9,145,68,Orthodox,"Jan 17, 1981",1.47,44%,2.72,43%,2.40,50%,83%,1.0,Record: 6-2-0 (1 NC)
 Daniel Puder,6' 3,235,N/A,Orthodox,"Oct 09, 1981",2.77,68%,1.17,38%,1.21,50%,81%,9.0,Record: 8-0-0
 Lucie Pudilova,5' 8,125,67,Orthodox,"Jun 13, 1994",3.60,37%,4.07,50%,0.70,31%,67%,0.6,Record: 14-10-0
-Claudio Puelles,5' 10,155,72,Southpaw,"Apr 21, 1996",1.56,49%,2.78,46%,3.17,36%,60%,1.2,Record: 13-4-0
 Juan Puerta,5' 9,125,71,Southpaw,"Jan 20, 1988",1.27,39%,1.27,67%,1.00,100%,0%,0.0,Record: 23-6-0
 Bubba Pugh,5' 10,185,N/A,N/A,N/A,2.87,67%,2.60,23%,4.00,57%,80%,0.0,Record: 3-3-0
 Juan Manuel Puig,5' 9,145,N/A,Orthodox,"Apr 23, 1989",4.91,23%,7.17,51%,0.00,0%,0%,0.0,Record: 11-4-0
@@ -3090,7 +3062,6 @@ Charles Radtke,5' 9,170,72,Orthodox,"Jul 09, 1990",3.38,53%,3.03,56%,0.59,12%,10
 Loik Radzhabov,5' 11,155,69,Orthodox,"Sep 17, 1990",2.89,44%,3.76,46%,4.65,57%,42%,0.0,Record: 18-6-1
 Gilbert Rael,5' 8,155,N/A,N/A,N/A,0.00,0%,7.46,37%,4.86,100%,0%,0.0,Record: 1-3-0
 Josh Rafferty,6' 0,170,N/A,Orthodox,"Jan 06, 1981",0.60,33%,3.60,50%,0.00,0%,0%,9.0,Record: 9-8-0
-Amir Rahnavardi,6' 0,205,N/A,Orthodox,"Dec 07, 1974",0.67,25%,0.00,100%,0.00,0%,50%,0.0,Record: 11-10-0
 Ricky Rainey,6' 1,170,77,Switch,"Jun 29, 1983",2.55,48%,2.62,46%,0.95,18%,55%,0.0,Record: 12-6-0
 Shavkat Rakhmonov,6' 1,170,77,Orthodox,"Oct 23, 1994",3.25,60%,2.17,51%,1.40,25%,85%,1.2,Record: 19-0-0
 Sora Rakhmonova,N/A,125,N/A,N/A,"Jun 21, 1998",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 4-1-0
@@ -3146,7 +3117,7 @@ Paulo Renato Junior,6' 0,205,73,Orthodox,"Jan 25, 1994",4.89,45%,5.18,56%,0.00,0
 Chance Rencountre,6' 2,170,75,Southpaw,"Dec 31, 1986",1.10,20%,3.62,49%,1.35,26%,16%,0.3,Record: 14-4-0
 Montserrat Rendon,5' 8,135,68,Orthodox,"Mar 16, 1989",3.13,28%,3.90,54%,3.00,54%,100%,0.0,Record: 6-1-0
 Marion Reneau,5' 6,135,68,Orthodox,"Jun 20, 1977",3.20,41%,3.52,59%,0.62,63%,50%,0.8,Record: 9-8-1
-N/A,N/A
+Solomon Renfro,5' 9,170,72,Switch,"Feb 05, 1997",5.20,44%,3.53,61%,2.00,50%,100%,0.0,Record: 8-2-0
 John Renken,6' 0,190,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 18-28-4 (1 NC)
 Herman Renting,6' 0,215,N/A,Switch,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-3-0
 Marco Polo Reyes,5' 11,155,71,Orthodox,"Nov 07, 1984",6.00,37%,5.52,59%,0.00,0%,46%,0.0,Record: 8-7-0
@@ -3177,7 +3148,7 @@ Brad Riddell,5' 7,155,71,Orthodox,"Sep 30, 1991",4.71,53%,3.53,53%,1.77,36%,63%,
 Matthew Riddle,6' 1,170,76,Southpaw,"Jan 14, 1986",3.01,42%,2.74,54%,3.51,50%,89%,0.5,Record: 8-3-0 (2 NC)
 Joe Riggs,6' 0,185,70,Southpaw,"Sep 23, 1982",2.41,51%,1.69,57%,2.45,55%,62%,0.6,Record: 44-17-0 (1 NC)
 Jeremiah Riggs,6' 0,185,N/A,N/A,"Dec 17, 1982",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 7-8-0
-N/A,N/A
+Aaron Riley,5' 8,155,69,Southpaw,"Dec 09, 1980",3.45,34%,3.78,61%,1.18,34%,60%,0.1,Record: 30-14-1
 Jason Riley,6' 6,245,N/A,N/A,"Sep 22, 1975",0.00,0%,9.68,33%,0.00,0%,50%,0.0,Record: 10-7-0
 Luke Riley,N/A,145,N/A,N/A,"Jun 30, 1999",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 9-0-0
 Moise Rimbon,5' 10,205,N/A,Orthodox,"Apr 20, 1977",0.80,34%,1.00,71%,1.00,50%,37%,0.0,Record: 23-11-3
@@ -3194,7 +3165,6 @@ Jorge Rivera,6' 1,185,73,Orthodox,"Feb 28, 1972",3.16,48%,2.64,54%,0.84,50%,63%,
 Dante Rivera,6' 1,185,N/A,Southpaw,"Dec 08, 1974",2.27,53%,4.00,25%,0.00,0%,16%,0.0,Record: 16-7-0
 Mario Rivera,5' 10,170,N/A,N/A,N/A,0.00,0%,8.41,20%,0.00,0%,0%,0.0,Record: 6-8-0
 Francisco Rivera,5' 8,135,70,Orthodox,"Oct 08, 1981",4.07,41%,3.16,68%,1.01,63%,68%,0.6,Record: 11-7-0 (1 NC)
-Jonathan Rivera,N/A,155,N/A,N/A,N/A,4.36,49%,3.90,60%,0.00,0%,0%,0.0,Record: 4-2-0
 Jimmie Rivera,5' 4,135,68,Orthodox,"Jun 29, 1989",4.03,40%,3.90,60%,0.88,27%,92%,0.1,Record: 23-5-0
 Irwin Rivera,5' 6,135,67,Southpaw,"Feb 14, 1989",3.36,44%,5.07,57%,1.00,16%,70%,0.0,Record: 10-6-0
 Jerome Rivera,5' 10,125,72,Southpaw,"Apr 22, 1995",3.21,33%,2.60,51%,0.00,0%,40%,0.0,Record: 10-6-0
@@ -3259,7 +3229,7 @@ Ricardo Romero,6' 0,205,76,Orthodox,"Apr 15, 1978",2.17,55%,4.77,46%,1.63,10%,10
 Yoel Romero,6' 0,185,73,Southpaw,"Apr 30, 1977",3.44,49%,3.05,60%,1.57,30%,78%,0.0,Record: 13-5-0
 Anthony Romero,5' 11,155,70,Orthodox,"Feb 25, 1997",5.87,52%,4.00,65%,2.00,22%,100%,0.0,Record: 8-0-0
 Kaleio Romero,5' 10,145,69,Switch,"Apr 19, 1996",2.60,48%,3.27,50%,1.00,8%,0%,1.0,Record: 6-2-0
-N/A,N/A
+Roberto Romero,5' 8,155,70,Orthodox,"Jan 30, 2000",4.93,47%,8.07,43%,0.00,0%,66%,0.0,Record: 8-4-1
 Mara Romero Borella,5' 6,125,69,Orthodox,"Jun 03, 1986",2.54,37%,2.48,71%,1.83,44%,66%,0.2,Record: 12-9-0 (2 NC)
 Cortavious Romious,5' 4,135,68,Southpaw,"Jan 06, 1994",2.10,37%,3.02,39%,1.97,66%,70%,1.0,Record: 9-3-0
 Juancamilo Ronderos,5' 3,125,64,Southpaw,"Feb 17, 1995",2.18,30%,2.18,63%,2.72,33%,0%,0.0,Record: 4-2-0
@@ -3308,7 +3278,6 @@ Bas Rutten,6' 1,205,N/A,Orthodox,"Feb 24, 1965",5.59,61%,2.06,79%,0.00,0%,0%,0.0
 Nursulton Ruziboev,6' 5,170,76,Orthodox,"Nov 19, 1993",2.50,43%,4.60,49%,0.77,100%,0%,0.0,Record: 34-9-2 (2 NC)
 Casey Ryan,N/A,185,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 7-3-0
 Yusup Saadulaev,5' 6,135,N/A,N/A,"Mar 31, 1985",0.57,45%,0.96,66%,5.73,60%,0%,1.0,Record: 16-4-1 (1 NC)
-Cameron Saaiman,5' 8,135,67,Southpaw,"Dec 20, 2000",5.32,46%,4.18,51%,0.91,28%,47%,0.7,Record: 9-2-0
 Pete Sabala,N/A,135,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 3-15-0
 Danny Sabatello,5' 10,135,71,Orthodox,"Mar 31, 1993",2.07,57%,0.20,25%,3.00,75%,100%,1.0,Record: 9-1-0
 Pat Sabatini,5' 8,145,70,Orthodox,"Nov 09, 1990",1.94,59%,1.47,48%,3.97,44%,50%,2.0,Record: 19-5-0
@@ -3352,7 +3321,6 @@ Josh San Diego,5' 10,135,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 8-3-
 Diego Sanchez,5' 10,170,72,Southpaw,"Dec 31, 1981",2.69,37%,3.02,56%,1.51,24%,46%,0.8,Record: 31-13-0
 Eddie Sanchez,6' 2,230,74,Orthodox,"Nov 04, 1982",3.45,43%,3.30,43%,1.13,26%,42%,0.0,Record: 15-8-0
 Julian Sanchez,6' 3,300,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-1-0
-Bobby Sanchez,5' 7,155,N/A,Orthodox,N/A,0.00,0%,0.00,100%,0.00,0%,100%,0.0,Record: 10-35-0
 Donald Sanchez,5' 10,145,N/A,N/A,"Aug 18, 1984",0.58,50%,1.16,55%,0.00,0%,50%,0.0,Record: 31-17-0
 Joby Sanchez,5' 6,135,68,Orthodox,"Jun 24, 1991",3.22,36%,2.82,63%,0.95,71%,51%,0.4,Record: 11-4-0
 Emmanuel Sanchez,5' 9,145,71,N/A,"Aug 11, 1990",4.45,35%,4.17,55%,0.25,6%,16%,0.5,Record: 15-3-0
@@ -3405,7 +3373,6 @@ Bob Sapp,6' 5,350,N/A,Orthodox,"Sep 22, 1974",3.19,55%,1.88,49%,0.58,100%,72%,0.
 Daniel Sarafian,5' 9,185,73,Orthodox,"Aug 21, 1982",2.23,46%,3.10,58%,0.36,7%,53%,0.7,Record: 10-6-0
 Jeka Saragih,5' 8,145,69,Orthodox,"Jan 01, 1995",2.73,50%,2.65,41%,2.21,80%,66%,0.6,Record: 14-4-0
 Diego Saraiva,5' 6,155,N/A,Orthodox,"Apr 23, 1982",1.64,32%,3.58,62%,1.33,40%,0%,0.7,Record: 22-20-1
-Harris Sarmiento,5' 9,155,N/A,Orthodox,"Sep 09, 1983",0.84,25%,3.46,36%,2.36,60%,57%,0.0,Record: 36-26-0
 Alexander Sarnavskiy,5' 11,155,N/A,N/A,"Jan 17, 1989",1.43,66%,2.06,42%,0.00,0%,75%,0.0,Record: 35-6-0
 Yuki Sasaki,6' 2,185,N/A,Orthodox,"Sep 12, 1976",1.09,43%,1.20,57%,0.43,100%,66%,0.0,Record: 25-22-2
 Kyosuke Sasaki,5' 7,183,N/A,Southpaw,N/A,0.33,45%,0.93,46%,0.00,0%,0%,0.0,Record: 3-7-4
@@ -3423,7 +3390,6 @@ Ben Saunders,6' 2,170,77,Orthodox,"Apr 13, 1983",3.23,50%,3.58,51%,0.20,40%,66%,
 Chad W. Saunders,5' 10,170,N/A,Orthodox,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 7-2-0
 Chris Saunders,5' 8,155,N/A,N/A,"Mar 11, 1986",1.48,22%,2.96,75%,3.70,100%,0%,0.0,Record: 16-8-0
 Christien Savoie,5' 11,170,72,Orthodox,"Aug 29, 1992",1.39,45%,6.95,23%,0.00,0%,12%,0.0,Record: 10-2-1
-Lumumba Sayers,6' 0,185,N/A,N/A,"Jun 30, 1978",2.54,41%,2.37,48%,7.63,75%,0%,2.5,Record: 6-5-0
 Matt Sayles,5' 7,155,68,Orthodox,"Feb 21, 1994",4.83,41%,2.81,61%,0.36,16%,81%,0.7,Record: 8-4-0
 Brandon Sayles,6' 5,265,N/A,N/A,"Apr 23, 1981",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 5-1-0
 Mikheil Sazhiniani,6' 0,205,71,Orthodox,"Oct 05, 1996",2.27,28%,3.03,52%,0.00,0%,100%,0.0,Record: 13-3-0
@@ -3457,7 +3423,7 @@ Justin Scoggins,5' 7,125,66,Southpaw,"May 02, 1992",3.56,51%,2.16,55%,3.42,63%,8
 Brad Scott,6' 1,170,76,Orthodox,"Jun 24, 1989",3.52,41%,4.31,57%,0.32,15%,63%,0.7,Record: 11-6-0
 Greg Scott,5' 9,145,N/A,N/A,N/A,3.90,55%,7.79,37%,11.69,100%,0%,0.0,Record: 3-4-0
 Louis Lee Scott,N/A,135,N/A,N/A,"Feb 26, 2000",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 8-0-0
-N/A,N/A
+Zachary Scroggin,6' 3,170,74,Orthodox,"Mar 09, 1996",2.40,37%,8.80,68%,0.00,0%,0%,0.0,Record: 7-1-0
 Mike Seal,6' 4,185,N/A,Orthodox,N/A,5.50,68%,3.33,50%,0.00,0%,33%,0.0,Record: 13-15-1 (1 NC)
 Matt Secor,6' 0,170,N/A,N/A,"Sep 26, 1986",0.51,20%,0.81,50%,3.03,100%,0%,3.0,Record: 8-4-0
 Kenneth Seegrist,6' 0,185,N/A,Orthodox,N/A,3.21,66%,1.28,0%,0.00,0%,40%,14.4,Record: 4-7-0
@@ -3707,7 +3673,6 @@ Darren Stewart,6' 0,205,74,Orthodox,"Dec 30, 1990",3.05,45%,3.29,48%,1.75,45%,67
 Kyle Stewart,6' 0,170,76,Orthodox,"Jan 31, 1989",1.41,35%,2.42,43%,1.32,20%,60%,0.0,Record: 11-3-0
 Alex Stiebling,6' 2,205,N/A,Southpaw,N/A,1.77,42%,1.45,52%,0.35,66%,66%,0.7,Record: 19-11-1 (1 NC)
 Tyler Stinson,6' 3,170,N/A,N/A,"Jan 17, 1986",2.80,23%,4.60,56%,0.50,100%,0%,0.5,Record: 30-10-0
-Navajo Stirling,6' 4,205,79,Orthodox,"Nov 07, 1997",5.82,56%,2.55,58%,0.00,0%,72%,0.0,Record: 6-0-0
 Dan Stittgen,6' 1,170,N/A,Orthodox,"Nov 17, 1980",2.97,46%,4.42,37%,0.78,100%,100%,0.0,Record: 12-5-0
 Lazar Stojadinovic,5' 7,145,68,Southpaw,"Mar 22, 1989",1.82,29%,1.97,59%,0.00,0%,0%,0.0,Record: 12-5-0
 Denis Stojnic,6' 0,245,N/A,Orthodox,"Feb 02, 1980",1.51,23%,6.06,36%,0.00,0%,80%,1.0,Record: 13-3-0 (1 NC)
@@ -3791,7 +3756,6 @@ Tsuyoshi Tamakairiki,6' 0,220,N/A,Orthodox,N/A,0.00,0%,26.67,50%,0.00,0%,0%,0.0,
 Eli Tamez,5' 7,135,N/A,N/A,"Aug 22, 1985",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 10-0-0
 Kiyoshi Tamura,5' 11,185,N/A,Southpaw,"Dec 17, 1969",2.44,53%,1.44,60%,0.58,60%,45%,0.2,Record: 32-13-3
 Akitoshi Tamura,5' 9,135,70,Orthodox,"May 31, 1980",3.73,43%,1.94,78%,0.00,0%,20%,1.0,Record: 21-18-2
-Issei Tamura,5' 5,135,63,Orthodox,"Mar 12, 1984",1.89,53%,4.58,44%,0.92,25%,33%,0.0,Record: 10-8-0
 Jason Tan,5' 10,170,N/A,Orthodox,"Dec 17, 1981",0.69,29%,7.37,18%,0.00,0%,0%,0.0,Record: 5-3-0
 Akihito Tanaka,N/A,N/A,N/A,Southpaw,N/A,0.19,50%,2.05,38%,5.59,66%,0%,0.0,Record: 2-2-0
 Michinori Tanaka,5' 5,135,67,Orthodox,"Oct 04, 1990",1.97,37%,1.99,50%,2.40,38%,43%,0.2,Record: 11-3-0
@@ -3811,7 +3775,6 @@ Paul Taylor,6' 0,155,72,Orthodox,"Dec 15, 1979",4.44,47%,4.47,55%,0.27,25%,56%,0
 Jesse Taylor,6' 0,170,73,Orthodox,"Jan 02, 1983",1.94,65%,0.55,38%,7.28,50%,100%,3.1,Record: 31-15-0
 Torrance Taylor,5' 7,155,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 13-8-1
 Louis Taylor,5' 11,185,N/A,Orthodox,"May 12, 1979",2.06,32%,1.24,68%,2.48,28%,100%,0.0,Record: 13-4-0
-Anthony Taylor,5' 7,145,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-3-0
 Danielle Taylor,5' 0,115,60,Orthodox,"Oct 25, 1989",2.75,29%,3.31,71%,0.20,20%,70%,0.2,Record: 9-4-0
 J.T Taylor,5' 10,N/A,N/A,N/A,N/A,3.17,80%,3.70,26%,3.96,100%,0%,7.9,Record: 7-7-0
 James Te Huna,6' 2,185,75,Orthodox,"Sep 29, 1981",4.04,51%,2.99,62%,2.75,37%,58%,0.2,Record: 16-9-0
@@ -3829,7 +3792,6 @@ Dave Terrel,5' 8,170,N/A,Southpaw,"May 10, 1978",2.62,43%,2.80,48%,3.28,38%,100%
 David Terrell,6' 1,185,N/A,Southpaw,"Jan 09, 1978",2.34,63%,2.71,37%,5.54,50%,0%,5.5,Record: 6-2-0
 James Terry,5' 10,170,N/A,Orthodox,"Mar 16, 1981",3.23,32%,4.77,64%,3.31,36%,75%,0.0,Record: 19-9-0
 Jeff Terry,6' 2,205,N/A,N/A,N/A,1.09,50%,9.27,19%,0.00,0%,100%,0.0,Record: 2-3-0
-David Teymur,5' 9,155,73,Southpaw,"May 01, 1989",4.69,43%,3.53,55%,0.94,33%,77%,0.0,Record: 8-2-0
 Daniel Teymur,5' 5,145,69,Orthodox,"Feb 03, 1988",3.08,46%,3.93,56%,0.56,18%,60%,0.3,Record: 7-4-0
 Motonobu Tezuka,5' 7,135,N/A,Southpaw,"Aug 29, 1987",0.87,23%,2.80,51%,1.50,11%,0%,0.5,Record: 28-12-7
 Jason Thacker,5' 10,185,N/A,Orthodox,"Aug 18, 1975",0.63,33%,17.05,32%,0.00,0%,0%,0.0,Record: 0-1-0
@@ -3870,7 +3832,7 @@ Masanori Tonooka,5' 8,185,N/A,Orthodox,N/A,0.16,5%,1.09,36%,0.00,0%,0%,0.0,Recor
 Carl Toomey,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 3-3-0
 Ilia Topuria,5' 7,145,69,Orthodox,"Jan 21, 1997",4.69,47%,3.84,64%,2.02,61%,92%,1.1,Record: 16-0-0
 Aleksandre Topuria,N/A,135,N/A,N/A,"Jan 28, 1996",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 5-1-0
-N/A,N/A
+Anthony Torres,5' 8,170,N/A,Orthodox,"Jul 31, 1978",3.54,48%,7.52,45%,0.00,0%,100%,2.2,Record: 5-3-0
 Miguel Torres,5' 9,135,76,Orthodox,"Jan 18, 1981",3.98,43%,1.86,74%,0.00,0%,17%,1.6,Record: 44-9-0
 Ronys Torres,5' 7,155,N/A,Orthodox,"Aug 13, 1975",0.87,26%,1.93,57%,4.00,47%,16%,0.5,Record: 35-5-0
 Haven Torres,N/A,125,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-0-0
@@ -3879,7 +3841,6 @@ Abram Torres,5' 10,170,N/A,N/A,"Oct 29, 1982",0.00,0%,0.00,0%,0.00,0%,0%,0.0,Rec
 Jose Torres,5' 4,125,65,Orthodox,"Aug 02, 1992",4.37,36%,9.84,50%,1.28,33%,75%,0.0,Record: 8-1-0
 Desmond Torres,5' 6,135,69,Orthodox,"Jan 06, 1997",4.80,64%,11.78,48%,0.00,0%,100%,0.0,Record: 7-2-0
 Manuel Torres,5' 10,155,73,Switch,"Mar 25, 1995",7.17,55%,4.53,52%,2.26,66%,88%,1.1,Record: 15-3-0
-Eduardo Torres Caut,5' 7,135,70,Orthodox,"Apr 26, 1995",1.10,34%,1.24,65%,2.06,33%,50%,0.0,Record: 16-2-0
 Salim Touahri,5' 10,170,72,Orthodox,"Sep 28, 1989",2.60,46%,2.87,58%,0.00,0%,83%,0.0,Record: 10-4-0
 Dequan Townsend,6' 3,205,79,Orthodox,"May 11, 1986",1.23,34%,3.92,38%,0.00,0%,46%,0.0,Record: 21-12-0
 Minoru Toyonaga,5' 11,195,N/A,Southpaw,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 2-5-0
@@ -4073,7 +4034,6 @@ Idris Wasi,6' 0,186,N/A,N/A,"Dec 11, 1989",0.40,31%,3.53,46%,0.00,0%,20%,0.0,Rec
 Kengo Watanabe,6' 4,220,N/A,Orthodox,"Jan 31, 1976",0.60,40%,3.40,35%,1.00,100%,37%,0.0,Record: 8-13-3 (1 NC)
 Kazuhisa Watanabe,5' 6,139,N/A,N/A,"May 18, 1983",0.62,50%,0.94,0%,0.00,0%,14%,0.0,Record: 0-1-0
 Ron Waterman,6' 2,280,N/A,Orthodox,"Nov 23, 1965",0.84,50%,1.37,42%,4.19,69%,50%,2.8,Record: 16-6-2
-Andy Waters,6' 0,170,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 1-2-0
 Dominic Waters,6' 1,170,79,Orthodox,"Apr 11, 1989",0.48,23%,2.53,39%,4.07,52%,28%,0.0,Record: 9-5-0
 Trey Waters,6' 5,170,77,Orthodox,"Feb 21, 1995",6.43,44%,5.61,56%,0.44,33%,85%,0.9,Record: 9-1-0
 Michelle Waterson-Gomez,5' 3,115,62,Orthodox,"Jan 06, 1986",3.42,46%,4.25,48%,1.39,33%,69%,0.6,Record: 18-13-0
@@ -4146,7 +4106,6 @@ Deron Winn,5' 6,185,70,Orthodox,"Jun 13, 1989",4.55,44%,6.21,46%,4.28,52%,40%,0.
 Andre Winner,5' 11,155,73,Orthodox,"Nov 09, 1981",2.52,33%,4.57,51%,0.00,0%,74%,0.0,Record: 21-11-2
 Eric Wisely,5' 8,145,N/A,Southpaw,"Jul 25, 1984",1.42,47%,2.08,56%,0.00,0%,27%,0.9,Record: 26-9-1
 Keith Wisniewski,6' 0,170,N/A,Orthodox,"Oct 25, 1981",2.32,52%,4.86,42%,1.57,40%,78%,0.3,Record: 28-15-1
-Jason Witt,5' 10,170,70,Orthodox,"Nov 07, 1986",2.15,44%,2.54,52%,6.90,48%,100%,0.9,Record: 19-9-0
 Travis Wiuff,6' 3,205,N/A,Orthodox,"Mar 15, 1978",0.48,30%,4.03,41%,4.84,57%,44%,1.2,Record: 75-21-0 (1 NC)
 Ray Wizard,N/A,N/A,N/A,N/A,N/A,0.00,0%,0.00,0%,0.00,0%,0%,0.0,Record: 0-1-0
 Karolina Wojcik,5' 2,115,N/A,Orthodox,"Dec 09, 1994",2.67,65%,0.87,62%,2.00,66%,100%,1.0,Record: 9-2-0
@@ -4188,7 +4147,7 @@ Norifumi Yamamoto,5' 4,135,66,Southpaw,"Mar 15, 1977",2.09,45%,2.01,57%,0.41,22%
 Hiroko Yamanaka,5' 11,135,N/A,N/A,"Oct 24, 1978",2.10,26%,3.54,63%,0.00,0%,100%,0.0,Record: 13-3-0 (1 NC)
 Goiti Yamauchi,5' 10,145,N/A,N/A,"Jan 05, 1993",1.66,54%,1.01,66%,0.00,0%,0%,4.3,Record: 21-3-0
 Takeshi Yamazaki,5' 8,139,N/A,Southpaw,N/A,0.57,25%,1.57,47%,4.50,50%,100%,1.0,Record: 15-12-3
-N/A,N/A
+Yan Xiaonan,5' 5,115,63,Orthodox,"Jun 16, 1989",4.99,45%,3.44,60%,0.92,73%,63%,0.0,Record: 19-4-0 (1 NC)
 Petr Yan,5' 7,135,67,Switch,"Feb 11, 1993",5.11,54%,4.13,58%,1.61,49%,84%,0.1,Record: 18-5-0
 Yan Qihui,5' 3,125,62,Orthodox,"Oct 21, 1996",4.38,46%,5.06,54%,3.68,69%,62%,0.0,Record: 25-5-0
 Adam Yandiev,5' 9,185,74,Orthodox,"Aug 07, 1988",0.18,8%,6.14,36%,0.00,0%,25%,0.0,Record: 9-1-0

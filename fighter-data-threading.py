@@ -99,7 +99,7 @@ def main():
     # Step 2: Fetch fighter data concurrently
     columns = ["Full Name", "Height(inches)", "Weight(lbs)", "Reach(inches)",
                "Stance", "DOB", "SLpM.", "Str.Acc.", "SApM", "Str.Def", "TD Avg.",
-               "TD Acc.", "TD Def.", "Sub. Avg.", "W", "L", "D"]
+               "TD Acc.", "TD Def.", "Sub. Avg.", "Record"]
     
     with open("fighter-stats-threading.csv", "w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
@@ -110,7 +110,7 @@ def main():
 
             # Write each fighter's data to the CSV
             for fighter_attributes in fighter_results:
-                if fighter_attributes:  # Check if data is not None
+                if (fighter_attributes) and (fighter_attributes[0] != "N/A"):  # Check if data is not None
                     writer.writerow(fighter_attributes)
 
 if __name__ == "__main__":

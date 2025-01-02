@@ -5,16 +5,24 @@ conn = psycopg2.connect(host="localhost", dbname="postgres", user="postgres", pa
 cur = conn.cursor()
 
 cur.execute("""CREATE TABLE IF NOT EXISTS fighters (
-        name VARCHAR(255) PRIMARY KEY,
-        height FLOAT,   
+        id SERIAL PRIMARY KEY,
+        name TEXT,
+        height TEXT,   
         weight FLOAT,
         reach FLOAT,
-        stance VARCHAR(255),
-        age INT,
-        
-        
-                
-        )""")
+        stance TEXT,
+        dob DATE,
+        slpm FLOAT,
+        stracc TEXT,
+        sapm FLOAT,
+        strdef TEXT,
+        tdavg FLOAT,
+        tdacc TEXT,
+        tddef TEXT,
+        subavg FLOAT,
+        record TEXT
+    )""")
+
 
 conn.commit()
 
