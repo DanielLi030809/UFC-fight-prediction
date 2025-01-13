@@ -11,7 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        ufcRed: '#C33226',
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif']
+      }
     },
   },
   plugins: [],
