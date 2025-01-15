@@ -23,6 +23,25 @@ cur.execute("""CREATE TABLE IF NOT EXISTS fighters (
         record TEXT
     )""")
 
+cur.execute("""CREATE TABLE IF NOT EXISTS processed (
+        id SERIAL PRIMARY KEY,
+        name TEXT,
+        height FLOAT,   
+        weight FLOAT,
+        reach FLOAT,
+        slpm FLOAT,
+        stracc TEXT,
+        sapm FLOAT,
+        strdef TEXT,
+        tdavg FLOAT,
+        tdacc TEXT,
+        tddef TEXT,
+        subavg FLOAT,
+        win FLOAT,
+        loss FLOAT,
+        draw FLOAT
+    )""")
+
 
 conn.commit()
 

@@ -9,9 +9,6 @@ export default async function Home({
 }: {
   searchParams: { query?: string };
 }) {
-    const id = await searchParams.query;
-    const response = await fetch(`http://127.0.0.1:8000/fighter/${id}`);
-    const data = await response.json();
 
     const rawQuery = searchParams.query || ""
 
@@ -38,7 +35,7 @@ export default async function Home({
               <FighterCard key={fighter.id} data={fighter}></FighterCard>
             ))}
           </div>
-          <PredictionButton id={id}></PredictionButton>
+          <PredictionButton rawQuery={rawQuery}></PredictionButton>
         </div>
       </>
     );
