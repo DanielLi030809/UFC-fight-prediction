@@ -5,9 +5,17 @@ from sqlalchemy.orm import Session
 from pydantic import BaseModel
 from datetime import date
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi import Query
 
 from fastapi import FastAPI, Depends, HTTPException
 from typing import List, Optional
+import joblib
+
+# Path to the model file
+model_path = "models/model.pickle"
+
+# Load the model
+model = joblib.load(model_path)
 
 app = FastAPI()
 
@@ -157,3 +165,25 @@ def delete_fighter(id: int, db: Session = Depends(get_db)):
     db.delete(db_fighter)
     db.commit()
     return db_fighter
+
+# Predict match outcome
+@app.delete("/predict")
+def predict(ids: str=Query(...), db: Session = Depends(get_db)):
+    fighter_ids = [int(x.strip()) for x in ids.split(",") if x.strip().isdigit()]
+    if not fighter_ids:
+        raise HTTPException(status_code=400, detail="No valid fighter IDs provided.")
+    
+    # Look up the fighters from the database
+    fighters = db.query(Fighter).filter(Fighter.id.in_(fighter_ids)).all()
+    fighter_map = {f.id: f for f in fighters}
+
+    # Order fighters by ID
+    ordered_fighters = []
+    for fid in fighter_ids:
+        if fid in fighter_map:
+            ordered_fighters.append(fighter_map[fid])
+    
+    fighter1 = list(ordered_fighters[0].values())[1:]
+    fighter2 = list(ordered_fighters[1].values())[1:]
+
+    return (fighter1, fighter2)
