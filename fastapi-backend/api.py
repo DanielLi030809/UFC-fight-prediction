@@ -44,6 +44,7 @@ def get_db():
     finally:
         db.close()
 
+# Original fighters table
 class Fighter(Base):
     __tablename__ = "fighters"
 
@@ -63,6 +64,48 @@ class Fighter(Base):
     tddef=Column(String, index=True)
     subavg=Column(Float, index=True)
     record=Column(String, index=True)
+
+# Modified fighters table that matches with the processed table
+class FilteredFighters(Base):
+    __tablename__ = "filtered_fighters"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)
+    height=Column(String, index=True)
+    weight=Column(Float, index=True)
+    reach=Column(Float, index=True)
+    stance=Column(String, index=True)
+    dob=Column(Date, index=True)
+    slpm=Column(Float, index=True)
+    stracc=Column(String, index=True)
+    sapm=Column(Float, index=True)
+    strdef=Column(String, index=True)
+    tdavg=Column(Float, index=True)
+    tdacc=Column(String, index=True)
+    tddef=Column(String, index=True)
+    subavg=Column(Float, index=True)
+    record=Column(String, index=True)
+
+# Standardized fighter data that's ready for training
+class Processed(Base):
+    __tablename__ = "processed"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)
+    height=Column(Float, index=True)
+    weight=Column(Float, index=True)
+    reach=Column(Float, index=True)
+    slpm=Column(Float, index=True)
+    stracc=Column(Float, index=True)
+    sapm=Column(Float, index=True)
+    strdef=Column(Float, index=True)
+    tdavg=Column(Float, index=True)
+    tdacc=Column(Float, index=True)
+    tddef=Column(Float, index=True)
+    subavg=Column(Float, index=True)
+    win=Column(Float, index=True)
+    draw=Column(Float, index=True)
+    loss=Column(Float, index=True)
 
 Base.metadata.create_all(bind=engine)
 
@@ -121,8 +164,23 @@ class FighterResponse(BaseModel):
     class Config:
         from_attributes = True
 
-def model_to_values(obj):
-    return [value for key, value in vars(obj).items() if not key.startswith("_")]
+class PredictionResponse(BaseModel):
+    id: int
+    name: str
+    height: float
+    weight: float
+    reach: float
+    slpm: float
+    stracc: float
+    sapm: float
+    strdef: float
+    tdavg: float
+    tdacc: float
+    tddef: float
+    subavg: float
+    win: float
+    loss: float
+    draw: float
 
 # Create a new fighter
 @app.post("/fighter/", response_model=FighterResponse)
@@ -142,7 +200,7 @@ def read_fighters(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
 # Get a fighter by id
 @app.get("/fighter/{id}", response_model=FighterResponse)
 def read_fighter(id: int, db: Session = Depends(get_db)):
-    fighter = db.query(Fighter).filter(Fighter.id == id).first()
+    fighter = db.query(FilteredFighters).filter(FilteredFighters.id == id).first()
     if fighter is None:
         raise HTTPException(status_code=404, detail="User not found")
     return fighter
@@ -173,24 +231,19 @@ def delete_fighter(id: int, db: Session = Depends(get_db)):
 @app.post("/predict/{ids}")
 def predict(ids: str, db: Session = Depends(get_db)):
     fighter_ids = [int(x.strip()) for x in ids.split(",") if x.strip().isdigit()]
+    print(fighter_ids)
     if not fighter_ids:
         raise HTTPException(status_code=400, detail="No valid fighter IDs provided.")
-    if len(fighter_ids) < 2:
+    if len(fighter_ids) != 2:
         raise HTTPException(status_code=400, detail="At least two fighters are required.")
     
-    # Look up the fighters from the database
-    fighters = db.query(Fighter).filter(Fighter.id.in_(fighter_ids)).all()
-    fighter_map = {f.id: f for f in fighters}
+    fighter1 = db.query(Processed).filter(Processed.id == fighter_ids[0]).first()
+    fighter2 = db.query(Processed).filter(Processed.id == fighter_ids[1]).first()
 
-    # Order fighters by ID
-    ordered_fighters = []
-    for fid in fighter_ids:
-        if fid in fighter_map:
-            ordered_fighters.append(fighter_map[fid])
+    prediction = model.predict([[fighter1.height, fighter1.weight, fighter1.reach, fighter1.slpm, fighter1.stracc, fighter1.sapm, fighter1.strdef, fighter1.tdavg, fighter1.tdacc, fighter1.tddef, fighter1.subavg, fighter1.win, fighter1.loss, fighter1.draw,
+            fighter2.height, fighter2.weight, fighter2.reach, fighter2.slpm, fighter2.stracc, fighter2.sapm, fighter2.strdef, fighter2.tdavg, fighter2.tdacc, fighter2.tddef, fighter2.subavg, fighter2.win, fighter2.loss, fighter2.draw]])
     
-    fighter1 = model_to_values(ordered_fighters[0])[1:]
-    fighter2 = model_to_values(ordered_fighters[1])[1:]
+    prediction_list = prediction.tolist()
 
-    combined = fighter1 + fighter2
-
-    return combined
+# returns the fighter id of the winner
+    return {'Winner': fighter_ids[prediction_list[0] - 1]}

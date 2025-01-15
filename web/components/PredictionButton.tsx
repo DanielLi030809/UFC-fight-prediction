@@ -20,7 +20,10 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
   return (
     <>
       <button onClick={handlePrediction} className="rounded-sm text-white bg-ufcRed w-[100px] ml-10 mt-10">Predict</button>
-      <div>{JSON.stringify(response)}</div>
+
+      <div className="flex justify-center">
+          <div className="w-[130px] bg-ufcRed roboto text-white flex justify-center">{JSON.stringify(response)}</div>
+      </div>
     </>
   );
 };
