@@ -37,7 +37,6 @@ const StatItem = ({
 
 const FighterCard = ({ data }: { data: FighterData }) => {
   const {
-    id,
     name,
     height,
     weight,

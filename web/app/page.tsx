@@ -1,6 +1,5 @@
 import SearchBar from "@/components/SearchBar";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
 import FighterCard from "@/components/FighterCard";
 import PredictionButton from "@/components/PredictionButton";
 import { ImagesSliderBackground } from "@/components/ImageSlider";
