@@ -5,11 +5,13 @@ import PredictionButton from "@/components/PredictionButton";
 import { ImagesSliderBackground } from "@/components/ImageSlider";
 import { BoxReveal } from "@/components/ui/box-reveal";
 import React from "react";
-export default async function Home({
-  searchParams,
-}: {
+
+interface PageProps {
+  params: { [key: string]: string | string[] | undefined };
   searchParams: { [key: string]: string | string[] | undefined };
-}) {
+}
+
+export default async function Home({ searchParams }: PageProps) {
   const rawQuery = Array.isArray(searchParams.query)
     ? searchParams.query[0] || ""
     : searchParams.query || "";
