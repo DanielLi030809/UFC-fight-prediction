@@ -239,11 +239,14 @@ def predict(ids: str, db: Session = Depends(get_db)):
     
     fighter1 = db.query(Processed).filter(Processed.id == fighter_ids[0]).first()
     fighter2 = db.query(Processed).filter(Processed.id == fighter_ids[1]).first()
-
+    
     prediction = model.predict([[fighter1.height, fighter1.weight, fighter1.reach, fighter1.slpm, fighter1.stracc, fighter1.sapm, fighter1.strdef, fighter1.tdavg, fighter1.tdacc, fighter1.tddef, fighter1.subavg, fighter1.win, fighter1.loss, fighter1.draw,
             fighter2.height, fighter2.weight, fighter2.reach, fighter2.slpm, fighter2.stracc, fighter2.sapm, fighter2.strdef, fighter2.tdavg, fighter2.tdacc, fighter2.tddef, fighter2.subavg, fighter2.win, fighter2.loss, fighter2.draw]])
-    
+    prediction_prob = model.predict_proba([[fighter1.height, fighter1.weight, fighter1.reach, fighter1.slpm, fighter1.stracc, fighter1.sapm, fighter1.strdef, fighter1.tdavg, fighter1.tdacc, fighter1.tddef, fighter1.subavg, fighter1.win, fighter1.loss, fighter1.draw,
+            fighter2.height, fighter2.weight, fighter2.reach, fighter2.slpm, fighter2.stracc, fighter2.sapm, fighter2.strdef, fighter2.tdavg, fighter2.tdacc, fighter2.tddef, fighter2.subavg, fighter2.win, fighter2.loss, fighter2.draw]])
     prediction_list = prediction.tolist()
+    prob_list = prediction_prob.tolist()
+
 
 # returns the fighter id of the winner
-    return {'Winner': fighter_ids[prediction_list[0] - 1]}
+    return {'Winner': fighter_ids[prediction_list[0] - 1], "fighter1_probability": prob_list[0][0], "fighter2_probability": prob_list[0][1]}
