@@ -8,13 +8,15 @@ import React from "react";
 export default async function Home({
   searchParams,
 }: {
-  searchParams: { query?: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 }) {
-  const rawQuery = searchParams.query || "";
+  const rawQuery = Array.isArray(searchParams.query)
+    ? searchParams.query[0] || ""
+    : searchParams.query || "";
 
   const queryArray = rawQuery
-    .split(",") // ["1","2","3"]
-    .map((id) => id.trim()) // Trim spaces if needed
+    .split(",")
+    .map((id) => id.trim())
     .filter(Boolean);
 
   const fighters = await Promise.all(
