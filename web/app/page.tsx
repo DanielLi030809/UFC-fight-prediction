@@ -6,7 +6,7 @@ import FighterCard from "@/components/FighterCard";
 import PredictionButton from "@/components/PredictionButton";
 import { ImagesSliderBackground } from "@/components/ImageSlider";
 import { BoxReveal } from "@/components/ui/box-reveal";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
 interface Fighter {
@@ -29,6 +29,14 @@ interface Fighter {
 }
 
 export default function Page() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PageContent />
+    </Suspense>
+  );
+}
+
+function PageContent() {
   const searchParams = useSearchParams();
   const [fighters, setFighters] = useState<Fighter[]>([]);
 
