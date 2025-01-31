@@ -6,10 +6,10 @@ import { ImagesSliderBackground } from "@/components/ImageSlider";
 import { BoxReveal } from "@/components/ui/box-reveal";
 import React from "react";
 
-export default async function Home({
+export default async function Page({
   searchParams,
 }: {
-  searchParams?: { query?: string | string[] };
+  searchParams?: { [key: string]: string | string[] | undefined };
 }) {
   const rawQuery = Array.isArray(searchParams?.query)
     ? searchParams.query[0] || ""
