@@ -1,8 +1,14 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { useState } from "react";
 import { MultiStepLoader } from "@/components/ui/multi-step-loader";
+
+interface PredictionResponse {
+  win: "fighter1" | "fighter2";
+  fighter1_probability: number;
+  fighter2_probability: number;
+}
 
 const loadingStates = [
   {
@@ -23,8 +29,9 @@ const loadingStates = [
 ];
 
 const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
-  const [response, setResponse] = useState(null);
+  const [response, setResponse] = useState<PredictionResponse | null>(null);
   const [loading, setLoading] = useState(false);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   const handlePrediction = async () => {
     setLoading(true);
@@ -41,7 +48,15 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
       setTimeout(() => {
         setResponse(response);
         setLoading(false);
-      }, 10000); // Adjust timing based on your loader duration * number of steps
+
+        // Add a small delay to ensure the results are rendered
+        setTimeout(() => {
+          resultsRef.current?.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        }, 100);
+      }, 10000);
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -49,10 +64,10 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
   };
 
   return (
-    <>
+    <div className="flex flex-col items-center pb-40">
       <button
         onClick={handlePrediction}
-        className="px-6 py-2.5 rounded-md text-white bg-ufcRed hover:bg-red-700 transition-colors duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 active:translate-y-0 ml-10 mt-10"
+        className="px-6 py-2.5 rounded-md text-white bg-ufcRed hover:bg-red-700 transition-colors duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 active:translate-y-0 mb-6"
       >
         Predict
       </button>
@@ -64,13 +79,54 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
       />
 
       {!loading && response && (
-        <div className="flex justify-center mt-4">
-          <div className="px-6 py-3 rounded-md bg-ufcRed roboto text-white text-center shadow-md">
-            {JSON.stringify(response)}
+        <div
+          ref={resultsRef}
+          className="w-full max-w-2xl mt-8 mb-32 p-6 bg-white rounded-lg shadow-lg border border-gray-200"
+        >
+          <h2 className="text-2xl font-bold text-gray-800 mb-4 flex justify-center">
+            Fight Prediction Results
+          </h2>
+
+          <div className="grid grid-cols-2 gap-6">
+            <div className="space-y-4">
+              <h3
+                className={`text-lg font-semibold ${
+                  response.win === "fighter1" ? "text-green-600" : "text-ufcRed"
+                }`}
+              >
+                Fighter 1 {response.fighter1_probability > 0.5 && "(Winner)"}
+              </h3>
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="text-gray-700">
+                  Win Probability:{" "}
+                  <span className="font-semibold">
+                    {(response.fighter1_probability * 100).toFixed(1)}%
+                  </span>
+                </p>
+              </div>
+            </div>
+
+            <div className="space-y-4">
+              <h3
+                className={`text-lg font-semibold ${
+                  response.win === "fighter2" ? "text-green-600" : "text-ufcRed"
+                }`}
+              >
+                Fighter 2 {response.fighter2_probability > 0.5 && "(Winner)"}
+              </h3>
+              <div className="bg-gray-50 p-4 rounded-md">
+                <p className="text-gray-700">
+                  Win Probability:{" "}
+                  <span className="font-semibold">
+                    {(response.fighter2_probability * 100).toFixed(1)}%
+                  </span>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

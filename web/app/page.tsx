@@ -4,6 +4,8 @@ import Hero from "@/components/Hero";
 import FighterCard from "@/components/FighterCard";
 import PredictionButton from "@/components/PredictionButton";
 import { ImagesSliderBackground } from "@/components/ImageSlider";
+import { BoxReveal } from "@/components/ui/box-reveal";
+import React from "react";
 export default async function Home({
   searchParams,
 }: {
@@ -33,22 +35,28 @@ export default async function Home({
         </div>
         <div className="flex items-center">
           {fighters.map((fighter, index) => (
-            <>
+            <React.Fragment key={fighter.id}>
               <FighterCard key={fighter.id} data={fighter} />
               {index === 0 && fighters.length > 1 && (
                 <div className="flex items-center justify-center w-32 h-32 mx-4">
                   <div className="relative">
                     <span className="absolute -inset-2 rounded-lg bg-red-600/20 blur-lg"></span>
-                    <span className="relative block text-7xl font-extrabold text-ufcRed roboto animate-pulse">
-                      VS
-                    </span>
+                    <BoxReveal>
+                      <span className="relative block text-7xl font-extrabold text-ufcRed roboto animate-pulse">
+                        VS
+                      </span>
+                    </BoxReveal>
                   </div>
                 </div>
               )}
-            </>
+            </React.Fragment>
           ))}
         </div>
-        <PredictionButton rawQuery={rawQuery}></PredictionButton>
+        {fighters.length === 2 && (
+          <div className="flex justify-center">
+            <PredictionButton rawQuery={rawQuery}></PredictionButton>
+          </div>
+        )}
       </div>
     </>
   );
