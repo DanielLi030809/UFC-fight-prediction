@@ -6,15 +6,14 @@ import { ImagesSliderBackground } from "@/components/ImageSlider";
 import { BoxReveal } from "@/components/ui/box-reveal";
 import React from "react";
 
-interface PageProps {
-  params: { [key: string]: string | string[] | undefined };
-  searchParams: { [key: string]: string | string[] | undefined };
-}
-
-export default async function Home({ searchParams }: PageProps) {
-  const rawQuery = Array.isArray(searchParams.query)
+export default async function Home({
+  searchParams,
+}: {
+  searchParams?: { query?: string | string[] };
+}) {
+  const rawQuery = Array.isArray(searchParams?.query)
     ? searchParams.query[0] || ""
-    : searchParams.query || "";
+    : searchParams?.query || "";
 
   const queryArray = rawQuery
     .split(",")
