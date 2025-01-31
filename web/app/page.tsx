@@ -1,31 +1,60 @@
+"use client";
+
 import SearchBar from "@/components/SearchBar";
 import Header from "@/components/Header";
 import FighterCard from "@/components/FighterCard";
 import PredictionButton from "@/components/PredictionButton";
 import { ImagesSliderBackground } from "@/components/ImageSlider";
 import { BoxReveal } from "@/components/ui/box-reveal";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
-export default async function Page({
-  searchParams,
-}: {
-  searchParams?: { [key: string]: string | string[] | undefined };
-}) {
-  const rawQuery = Array.isArray(searchParams?.query)
-    ? searchParams.query[0] || ""
-    : searchParams?.query || "";
+interface Fighter {
+  id: number;
+  name: string;
+  height: string;
+  weight: number;
+  reach: number;
+  stance: string;
+  dob: string;
+  slpm: number;
+  stracc: string;
+  sapm: number;
+  strdef: string;
+  tdavg: number;
+  tdacc: string;
+  tddef: string;
+  subavg: number;
+  record: string;
+}
 
-  const queryArray = rawQuery
-    .split(",")
-    .map((id) => id.trim())
-    .filter(Boolean);
+export default function Page() {
+  const searchParams = useSearchParams();
+  const [fighters, setFighters] = useState<Fighter[]>([]);
 
-  const fighters = await Promise.all(
-    queryArray.map(async (id) => {
-      const response = await fetch(`http://127.0.0.1:8000/fighter/${id}`);
-      return await response.json();
-    })
-  );
+  const rawQuery = searchParams.get("query") || "";
+
+  useEffect(() => {
+    const fetchFighters = async () => {
+      const queryArray = rawQuery
+        .split(",")
+        .map((id) => id.trim())
+        .filter(Boolean);
+
+      const fighterData = await Promise.all(
+        queryArray.map(async (id) => {
+          const response = await fetch(`http://127.0.0.1:8000/fighter/${id}`);
+          return await response.json();
+        })
+      );
+
+      setFighters(fighterData);
+    };
+
+    if (rawQuery) {
+      fetchFighters();
+    }
+  }, [rawQuery]);
 
   return (
     <>
