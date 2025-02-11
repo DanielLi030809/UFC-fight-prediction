@@ -91,14 +91,23 @@ async function PageContent({
   );
 }
 
-export default function Page({
+// The documented type for searchParams:
+type SearchParams = Promise<{ query?: string }>
+
+
+export default async function Page({
   searchParams,
 }: {
-  searchParams: { query?: string };
+  searchParams: SearchParams;
 }) {
+
+    // Await the promise to get the actual object
+  const resolvedSearchParams = await searchParams;
+
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <PageContent searchParams={searchParams} />
+      <PageContent searchParams={resolvedSearchParams} />
     </Suspense>
   );
 }
