@@ -12,7 +12,7 @@ from typing import List, Optional
 import joblib
 
 # Path to the model file
-model_path = "fastapi-backend/models/model.pickle"
+model_path = "../jupyter/models/model.pickle"
 
 # Load the model
 model = joblib.load(model_path)
