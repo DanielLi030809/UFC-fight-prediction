@@ -1,0 +1,6 @@
+**/*.ipynb
+tempCodeRunnerFile.py
+database.py
+models/**
+**/__pycache__/**
+*.pyc 
