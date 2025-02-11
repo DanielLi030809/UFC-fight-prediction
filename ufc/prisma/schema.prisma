@@ -7,7 +7,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// This is the full dataset of fighters that needs to be filtered down by doing a join with the Input model
 model Fighter {
   id     Int       @id @default(autoincrement())
   name   String?   @db.VarChar
@@ -43,7 +42,6 @@ model Fighter {
   @@index([record])
 }
 
-// This is gonna be what gets inputted into the model
 model Input {
   id     Int     @id @default(autoincrement())
   name   String?
@@ -77,4 +75,23 @@ model Input {
   @@index([win])
   @@index([draw])
   @@index([loss])
+}
+
+model joined {
+  name   String?   @db.VarChar
+  height String?   @db.VarChar
+  weight Float?
+  reach  Float?
+  stance String?   @db.VarChar
+  dob    DateTime? @db.Date
+  slpm   Float?
+  stracc String?   @db.VarChar
+  sapm   Float?
+  strdef String?   @db.VarChar
+  tdavg  Float?
+  tdacc  String?   @db.VarChar
+  tddef  String?   @db.VarChar
+  subavg Float?
+  record String?   @db.VarChar
+  id     Int       @id @default(autoincrement())
 }

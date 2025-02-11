@@ -1,79 +1,66 @@
-"use client";
-
-export const dynamic = "force-dynamic";
-
-
 import SearchBar from "@/components/SearchBar";
 import Header from "@/components/Header";
 import FighterCard from "@/components/FighterCard";
 import PredictionButton from "@/components/PredictionButton";
 import { ImagesSliderBackground } from "@/components/ImageSlider";
 import { BoxReveal } from "@/components/ui/box-reveal";
-import React, { useEffect, useState, Suspense } from "react";
-import { useSearchParams } from "next/navigation";
+import React from "react";
+import { Suspense } from "react";
+import { prisma } from "@/lib/prisma";
+import { Fighter } from "@prisma/client";
 
-interface Fighter {
-  id: number;
-  name: string;
-  height: string;
-  weight: number;
-  reach: number;
-  stance: string;
-  dob: string;
-  slpm: number;
-  stracc: string;
-  sapm: number;
-  strdef: string;
-  tdavg: number;
-  tdacc: string;
-  tddef: string;
-  subavg: number;
-  record: string;
-}
+async function getFighters(query: string) {
+  if (!query) return [];
 
-export default function Page() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <PageContent />
-    </Suspense>
+  const fighterNames = query
+    .split(",")
+    .map((name) => name.trim())
+    .filter(Boolean);
+
+  const fighters = await Promise.all(
+    fighterNames.map(async (name) => {
+      return prisma.fighter.findFirst({
+        where: {
+          name: {
+            contains: name,
+            mode: "insensitive", // Case-insensitive search
+          },
+        },
+      });
+    })
   );
+
+  // Filter out any null results and return the fighters
+  return fighters.filter((fighter): fighter is Fighter => fighter !== null);
 }
 
-function PageContent() {
-  const searchParams = useSearchParams();
-  const [fighters, setFighters] = useState<Fighter[]>([]);
+async function PageContent({
+  searchParams,
+}: {
+  searchParams: { query?: string };
+}) {
+  const rawQuery = searchParams.query || "";
+  const fighters = await getFighters(rawQuery);
 
-  const rawQuery = searchParams.get("query") || "";
+  // Get all fighter names
+  const fighterNames = await prisma.fighter.findMany({
+    select: {
+      name: true,
+    },
+  });
 
-  useEffect(() => {
-    const fetchFighters = async () => {
-      const queryArray = rawQuery
-        .split(",")
-        .map((id) => id.trim())
-        .filter(Boolean);
-
-      const fighterData = await Promise.all(
-        queryArray.map(async (id) => {
-          const response = await fetch(`http://127.0.0.1:8000/fighter/${id}`);
-          return await response.json();
-        })
-      );
-
-      setFighters(fighterData);
-    };
-
-    if (rawQuery) {
-      fetchFighters();
-    }
-  }, [rawQuery]);
+  // If you just want an array of names
+  const names = fighterNames
+    .map((fighter) => fighter.name)
+    .filter((name): name is string => name !== null);
 
   return (
     <>
-      <Header></Header>
-      <ImagesSliderBackground></ImagesSliderBackground>
-      <div className="bg-white h-screen">
+      <Header />
+      <ImagesSliderBackground />
+      <div className="bg-white h-screen flex flex-col items-center">
         <div className="flex justify-center">
-          <SearchBar></SearchBar>
+          <SearchBar data={names} />
         </div>
         <div className="flex items-center">
           {fighters.map((fighter, index) => (
@@ -96,10 +83,22 @@ function PageContent() {
         </div>
         {fighters.length === 2 && (
           <div className="flex justify-center">
-            <PredictionButton rawQuery={rawQuery}></PredictionButton>
+            <PredictionButton rawQuery={rawQuery} />
           </div>
         )}
       </div>
     </>
+  );
+}
+
+export default function Page({
+  searchParams,
+}: {
+  searchParams: { query?: string };
+}) {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <PageContent searchParams={searchParams} />
+    </Suspense>
   );
 }

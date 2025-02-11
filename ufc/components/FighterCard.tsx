@@ -1,41 +1,26 @@
 import React from "react";
 import { Card, CardTitle, CardContent, CardFooter } from "./ui/card";
 import Image from "next/image";
-
-interface FighterData {
-  id: number;
-  name: string;
-  height: string;
-  weight: number;
-  reach: number;
-  stance: string;
-  dob: string;
-  slpm: number;
-  stracc: string;
-  sapm: number;
-  strdef: string;
-  tdavg: number;
-  tdacc: string;
-  tddef: string;
-  subavg: number;
-  record: string;
-}
+import { Fighter } from "@prisma/client";
 
 const StatItem = ({
   label,
   value,
 }: {
   label: string;
-  value: string | number;
+  value: string | number | Date | null;
 }) => (
   <div className="py-3 border-b border-gray-600 hover:bg-gray-600/30 transition-colors duration-200">
     <p className="font-bold">
-      {label}: <span className="font-normal text-gray-300">{value}</span>
+      {label}:{" "}
+      <span className="font-normal text-gray-300">
+        {value instanceof Date ? value.toLocaleDateString() : value ?? "N/A"}
+      </span>
     </p>
   </div>
 );
 
-const FighterCard = ({ data }: { data: FighterData }) => {
+const FighterCard = ({ data }: { data: Fighter }) => {
   const {
     name,
     height,
@@ -55,7 +40,7 @@ const FighterCard = ({ data }: { data: FighterData }) => {
   } = data;
   return (
     <>
-      <Card className="w-[1000px] ml-10 mt-10 flex h-[700px] shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl overflow-hidden">
+      <Card className="w-full ml-10 mt-10 flex h-[700px] shadow-xl hover:shadow-2xl transition-shadow duration-300 rounded-xl overflow-hidden">
         <div className="bg-ufcRed flex flex-col items-center gap-8 h-full w-1/3">
           <CardTitle className="flex justify-center items-center roboto text-white text-3xl mt-5 font-bold tracking-wider w-full text-center px-4">
             {name}

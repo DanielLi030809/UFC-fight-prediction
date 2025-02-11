@@ -56,7 +56,7 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
             block: "center",
           });
         }, 100);
-      }, 10000);
+      }, 4600);
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -64,18 +64,26 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
   };
 
   return (
-    <div className="flex flex-col items-center pb-40">
+    <div className="flex flex-col items-center pb-40 pt-10">
       <button
         onClick={handlePrediction}
-        className="px-6 py-2.5 rounded-md text-white bg-ufcRed hover:bg-red-700 transition-colors duration-200 font-semibold text-sm shadow-md hover:shadow-lg transform hover:-translate-y-0.5 active:translate-y-0 mb-6"
+        className="px-8 py-4 rounded-xl text-white bg-ufcRed hover:bg-red-700 
+          transition-all duration-300 font-bold text-xl shadow-lg 
+          hover:shadow-2xl transform hover:-translate-y-1 active:translate-y-0 
+          mb-6 border-2 border-white hover:border-red-300
+          min-w-[200px] relative overflow-hidden"
       >
-        Predict
+        <span className="relative z-10">Predict Winner</span>
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-red-600 to-red-800 opacity-0 
+          hover:opacity-100 transition-opacity duration-300"
+        ></div>
       </button>
 
       <MultiStepLoader
         loadingStates={loadingStates}
         loading={loading}
-        duration={2000}
+        duration={1000}
       />
 
       {!loading && response && (

@@ -22,14 +22,14 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ufc-fight-prediction.vercel.app", "http://localhost:3001"],  # Trusted origins (e.g., frontend URL)
+    allow_origins=["https://ufc-fight-prediction.vercel.app", "http://localhost:3000"],  # Trusted origins (e.g., frontend URL)
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
 
 
-DATABASE_URL = "postgresql://neondb_owner:npg_DRptGBAy17Zf@ep-frosty-king-a86pbb4w-pooler.eastus2.azure.neon.tech/neondb?sslmode=require"
+DATABASE_URL = "postgresql://neondb_owner:npg_DRptGBAy17Zf@ep-fancy-recipe-a8gtynxo-pooler.eastus2.azure.neon.tech/neondb?sslmode=require"
 
 engine = create_engine(DATABASE_URL)
 
@@ -106,27 +106,6 @@ class Processed(Base):
     win=Column(Float, index=True)
     draw=Column(Float, index=True)
     loss=Column(Float, index=True)
-
-# Add this class with your existing models
-class Input(Base):
-    __tablename__ = "Input"
-
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    height = Column(Float, index=True)
-    weight = Column(Float, index=True)
-    reach = Column(Float, index=True)
-    slpm = Column(Float, index=True)
-    stracc = Column(Float, index=True)
-    sapm = Column(Float, index=True)
-    strdef = Column(Float, index=True)
-    tdavg = Column(Float, index=True)
-    tdacc = Column(Float, index=True)
-    tddef = Column(Float, index=True)
-    subavg = Column(Float, index=True)
-    win = Column(Float, index=True)
-    draw = Column(Float, index=True)
-    loss = Column(Float, index=True)
 
 Base.metadata.create_all(bind=engine)
 
@@ -248,39 +227,32 @@ def delete_fighter(id: int, db: Session = Depends(get_db)):
     db.commit()
     return db_fighter
 
-# Replace the predict endpoint with this updated version
-@app.post("/predict/{names}")
-def predict(names: str, db: Session = Depends(get_db)):
-    print(f"Received request for fighters: {names}")
-    fighter_names = [name.strip() for name in names.split(",")]
-    print(f"Parsed fighter names: {fighter_names}")
+# Predict match outcome
+@app.post("/predict/{ids}")
+def predict(ids: str, db: Session = Depends(get_db)):
+    print(ids)
+    fighter_ids = [int(x.strip()) for x in ids.split(",") if x.strip().isdigit()]
+    print(fighter_ids)
+    if not fighter_ids:
+        raise HTTPException(status_code=400, detail="No valid fighter IDs provided.")
+    if len(fighter_ids) != 2:
+        raise HTTPException(status_code=400, detail="At least two fighters are required.")
     
-    # Add more detailed logging for database queries
-    fighter1 = db.query(Input).filter(Input.name == fighter_names[0]).first()
-    print(f"Fighter 1 query result: {fighter1}")
-    fighter2 = db.query(Input).filter(Input.name == fighter_names[1]).first()
-    print(f"Fighter 2 query result: {fighter2}")
-    
-    if not fighter_names:
-        raise HTTPException(status_code=400, detail="No valid fighter Names provided.")
-    if len(fighter_names) != 2:
-        raise HTTPException(status_code=400, detail="Exactly two fighters are required.")
-    
-    if not fighter1 or not fighter2:
-        raise HTTPException(status_code=404, detail="One or both fighters not found")
+    fighter1 = db.query(Processed).filter(Processed.id == fighter_ids[0]).first()
+    fighter2 = db.query(Processed).filter(Processed.id == fighter_ids[1]).first()
 
     prediction = model.predict([[fighter1.height, fighter1.weight, fighter1.reach, fighter1.slpm, fighter1.stracc, fighter1.sapm, fighter1.strdef, fighter1.tdavg, fighter1.tdacc, fighter1.tddef, fighter1.subavg, fighter1.win, fighter1.loss, fighter1.draw,
             fighter2.height, fighter2.weight, fighter2.reach, fighter2.slpm, fighter2.stracc, fighter2.sapm, fighter2.strdef, fighter2.tdavg, fighter2.tdacc, fighter2.tddef, fighter2.subavg, fighter2.win, fighter2.loss, fighter2.draw]])
     prediction_prob = model.predict_proba([[fighter1.height, fighter1.weight, fighter1.reach, fighter1.slpm, fighter1.stracc, fighter1.sapm, fighter1.strdef, fighter1.tdavg, fighter1.tdacc, fighter1.tddef, fighter1.subavg, fighter1.win, fighter1.loss, fighter1.draw,
             fighter2.height, fighter2.weight, fighter2.reach, fighter2.slpm, fighter2.stracc, fighter2.sapm, fighter2.strdef, fighter2.tdavg, fighter2.tdacc, fighter2.tddef, fighter2.subavg, fighter2.win, fighter2.loss, fighter2.draw]])
     prediction_list = prediction.tolist()
-    print(prediction_list)
     prob_list = prediction_prob.tolist()
-    print(prob_list)
 
-    # Return the fighter id of the winner
-    return {
-        'Winner': fighter_names[prediction_list[0] - 1], 
-        "fighter1_probability":  1 - prob_list[0][0], 
-        "fighter2_probability": 1 - prob_list[0][1]
-    }
+
+# returns the fighter id of the winner
+    return {'Winner': fighter_ids[prediction_list[0] - 1], "fighter1_probability": prob_list[0][0], "fighter2_probability": prob_list[0][1]}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

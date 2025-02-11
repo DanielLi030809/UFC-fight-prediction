@@ -55,7 +55,9 @@ const LoaderCore = ({
         return (
           <motion.div
             key={index}
-            className={cn("text-left flex gap-2 mb-4 text-xl font-roboto font-bold")}
+            className={cn(
+              "text-left flex gap-2 mb-4 text-xl font-roboto font-bold"
+            )}
             initial={{ opacity: 0, y: -(value * 40) }}
             animate={{ opacity: opacity, y: -(value * 40) }}
             transition={{ duration: 0.5 }}
@@ -89,7 +91,7 @@ const LoaderCore = ({
 export const MultiStepLoader = ({
   loadingStates,
   loading,
-  duration = 2000,
+  duration = 1000,
   loop = true,
 }: {
   loadingStates: LoadingState[];
