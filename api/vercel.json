@@ -11,5 +11,13 @@
         "src": "/(.*)",
         "dest": "api.py"
       }
+    ],
+    "excludeFiles": [
+      "**/*.ipynb",
+      "tempCodeRunnerFile.py",
+      "database.py",
+      "models/**",
+      "**/__pycache__/**",
+      "*.pyc"
     ]
-  }
+}
