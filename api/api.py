@@ -11,11 +11,26 @@ from fastapi import FastAPI, Depends, HTTPException
 from typing import List, Optional
 import joblib
 
-# Path to the model file
-model_path = "../jupyter/models/model.pickle"
+# Global variable to cache the model once it's loaded
+model = None
 
-# Load the model
-model = joblib.load(model_path)
+def download_model_if_needed():
+    global model
+    if model is None:
+        # Option 1: If the model is stored on S3
+        # s3_client = boto3.client('s3')
+        # bucket_name = 'your-bucket-name'
+        # object_key = 'models/model.pickle'
+        # temp_file = tempfile.NamedTemporaryFile(delete=False)
+        # s3_client.download_file(bucket_name, object_key, temp_file.name)
+        # model_path = temp_file.name
+
+        # Option 2: If the model is still in your file system (but not included in the bundle)
+        model_path = "../jupyter/models/model.pickle"
+        
+        # Load the model
+        model = joblib.load(model_path)
+    return model
 
 app = FastAPI()
 
@@ -251,6 +266,10 @@ def delete_fighter(id: int, db: Session = Depends(get_db)):
 # Replace the predict endpoint with this updated version
 @app.post("/predict/{names}")
 def predict(names: str, db: Session = Depends(get_db)):
+
+        # Ensure the model is loaded (it will load on the first request)
+    ml_model = download_model_if_needed()
+
     print(f"Received request for fighters: {names}")
     fighter_names = [name.strip() for name in names.split(",")]
     print(f"Parsed fighter names: {fighter_names}")
