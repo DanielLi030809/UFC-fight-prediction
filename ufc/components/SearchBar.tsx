@@ -1,8 +1,7 @@
 "use client";
 
-import React, { FormEvent, useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Fighter } from "@prisma/client";
 
 const SearchBar = ({ data }: { data: string[] }) => {
   const router = useRouter();

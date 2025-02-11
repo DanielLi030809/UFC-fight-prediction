@@ -23,17 +23,17 @@ export const ImagesSlider = ({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loadedImages, setLoadedImages] = useState<string[]>([]);
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
+      prevIndex + 1 === loadedImages.length ? 0 : prevIndex + 1
     );
-  };
+  }, [loadedImages.length]);
 
-  const handlePrevious = () => {
+  const handlePrevious = useCallback(() => {
     setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
+      prevIndex === 0 ? loadedImages.length - 1 : prevIndex - 1
     );
-  };
+  }, [loadedImages.length]);
 
   const loadImages = useCallback(() => {
     const loadPromises = images.map((image) => {
