@@ -37,7 +37,7 @@ app = FastAPI()
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://ufc-fight-prediction.vercel.app", "http://localhost:3001"],  # Trusted origins (e.g., frontend URL)
+    allow_origins=["https://ufc-fight-prediction.vercel.app", "http://localhost:3001", "https://ufc-fight-prediction-ten.vercel.app"],  # Trusted origins (e.g., frontend URL)
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers

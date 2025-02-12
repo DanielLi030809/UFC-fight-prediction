@@ -5,3 +5,4 @@ joblib
 python-multipart
 pydantic
 datetime
+psycopg2-binary>=2.9.6
