@@ -5,4 +5,3 @@ joblib
 python-multipart
 pydantic
 datetime
-typing
