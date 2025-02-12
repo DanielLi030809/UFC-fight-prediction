@@ -6,3 +6,4 @@ python-multipart
 pydantic
 datetime
 psycopg2-binary>=2.9.6
+xgboost>=1.0.0
