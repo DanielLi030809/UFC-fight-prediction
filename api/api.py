@@ -26,7 +26,7 @@ def download_model_if_needed():
         # model_path = temp_file.name
 
         # Option 2: If the model is still in your file system (but not included in the bundle)
-        model_path = "../jupyter/models/model.pickle"
+        model_path = "./models/model.pickle"
         
         # Load the model
         model = joblib.load(model_path)
