@@ -35,11 +35,13 @@ const PredictionButton = ({ rawQuery }: { rawQuery: string }) => {
 
   const handlePrediction = async () => {
     setLoading(true);
+    // const name1 name2
     try {
       const data = await fetch(
-        `https://ufc-fight-prediction.vercel.app/predict/${encodeURIComponent(rawQuery)}`,
+        `http://127.0.0.1:8000/predict/${encodeURIComponent(rawQuery)}`,
         {
           method: "POST",
+          mode: "cors",
         }
       );
       const response = await data.json();

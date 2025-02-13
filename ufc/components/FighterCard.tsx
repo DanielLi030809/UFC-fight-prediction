@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardTitle, CardContent, CardFooter } from "./ui/card";
 import Image from "next/image";
-import { Fighter } from "@prisma/client";
+import { fighter } from "@prisma/client";
 
 const StatItem = ({
   label,
@@ -20,7 +20,7 @@ const StatItem = ({
   </div>
 );
 
-const FighterCard = ({ data }: { data: Fighter }) => {
+const FighterCard = ({ data }: { data: fighter }) => {
   const {
     name,
     height,

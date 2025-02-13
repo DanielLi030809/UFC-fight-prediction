@@ -62,13 +62,17 @@ const SearchBar = ({ data }: { data: string[] }) => {
   const handleSuggestionClick = (value: string) => {
     setInputValue(value);
     setShowDropdown(false);
+  };
+
+  const handleSearch = () => {
+    if (!inputValue) return;
 
     // Get the current "query" from the URL
     const existingQuery = searchParams.get("query") || "";
     const queryArray = existingQuery.split(",").filter(Boolean);
 
-    if (!queryArray.includes(value) && queryArray.length < 2) {
-      queryArray.push(value);
+    if (!queryArray.includes(inputValue) && queryArray.length < 2) {
+      queryArray.push(inputValue);
       const updatedQuery = queryArray.join(",");
       router.push(`/?query=${updatedQuery}`, { scroll: false });
     } else if (queryArray.length >= 2) {
@@ -132,7 +136,7 @@ const SearchBar = ({ data }: { data: string[] }) => {
 
         <button
           type="button"
-          onClick={() => handleSuggestionClick(inputValue)}
+          onClick={handleSearch}
           className="bg-ufcRed text-white font-bold rounded-xl px-8 py-4 
             transition-all duration-300 hover:bg-red-700 active:bg-red-800
             border-3 border-ufcRed hover:border-red-700 text-lg

@@ -7,76 +7,6 @@ datasource db {
   url      = env("NEXT_PUBLIC_DATABASE_URL")
 }
 
-model Fighter {
-  id     Int       @id @default(autoincrement())
-  name   String?   @db.VarChar
-  height String?   @db.VarChar
-  weight Float?
-  reach  Float?
-  stance String?   @db.VarChar
-  dob    DateTime? @db.Date
-  slpm   Float?
-  stracc String?   @db.VarChar
-  sapm   Float?
-  strdef String?   @db.VarChar
-  tdavg  Float?
-  tdacc  String?   @db.VarChar
-  tddef  String?   @db.VarChar
-  subavg Float?
-  record String?   @db.VarChar
-
-  @@index([name])
-  @@index([height])
-  @@index([weight])
-  @@index([reach])
-  @@index([stance])
-  @@index([dob])
-  @@index([slpm])
-  @@index([stracc])
-  @@index([sapm])
-  @@index([strdef])
-  @@index([tdavg])
-  @@index([tdacc])
-  @@index([tddef])
-  @@index([subavg])
-  @@index([record])
-}
-
-model Input {
-  id     Int     @id @default(autoincrement())
-  name   String?
-  height Float?
-  weight Float?
-  reach  Float?
-  slpm   Float?
-  stracc Float?
-  sapm   Float?
-  strdef Float?
-  tdavg  Float?
-  tdacc  Float?
-  tddef  Float?
-  subavg Float?
-  win    Float?
-  draw   Float?
-  loss   Float?
-
-  @@index([name])
-  @@index([height])
-  @@index([weight])
-  @@index([reach])
-  @@index([slpm])
-  @@index([stracc])
-  @@index([sapm])
-  @@index([strdef])
-  @@index([tdavg])
-  @@index([tdacc])
-  @@index([tddef])
-  @@index([subavg])
-  @@index([win])
-  @@index([draw])
-  @@index([loss])
-}
-
 model joined {
   name   String?   @db.VarChar
   height String?   @db.VarChar
@@ -94,4 +24,75 @@ model joined {
   subavg Float?
   record String?   @db.VarChar
   id     Int       @id @default(autoincrement())
+}
+
+model fighter {
+  id     Int       @id(map: "Fighter_pkey") @default(autoincrement())
+  name   String?   @db.VarChar
+  height String?   @db.VarChar
+  weight Float?
+  reach  Float?
+  stance String?   @db.VarChar
+  dob    DateTime? @db.Date
+  slpm   Float?
+  stracc String?   @db.VarChar
+  sapm   Float?
+  strdef String?   @db.VarChar
+  tdavg  Float?
+  tdacc  String?   @db.VarChar
+  tddef  String?   @db.VarChar
+  subavg Float?
+  record String?   @db.VarChar
+
+  @@index([dob], map: "Fighter_dob_idx")
+  @@index([height], map: "Fighter_height_idx")
+  @@index([name], map: "Fighter_name_idx")
+  @@index([reach], map: "Fighter_reach_idx")
+  @@index([record], map: "Fighter_record_idx")
+  @@index([sapm], map: "Fighter_sapm_idx")
+  @@index([slpm], map: "Fighter_slpm_idx")
+  @@index([stance], map: "Fighter_stance_idx")
+  @@index([stracc], map: "Fighter_stracc_idx")
+  @@index([strdef], map: "Fighter_strdef_idx")
+  @@index([subavg], map: "Fighter_subavg_idx")
+  @@index([tdacc], map: "Fighter_tdacc_idx")
+  @@index([tdavg], map: "Fighter_tdavg_idx")
+  @@index([tddef], map: "Fighter_tddef_idx")
+  @@index([weight], map: "Fighter_weight_idx")
+}
+
+model input {
+  id     Int     @id @default(autoincrement())
+  name   String? @db.VarChar
+  height Float?
+  weight Float?
+  reach  Float?
+  slpm   Float?
+  stracc Float?
+  sapm   Float?
+  strdef Float?
+  tdavg  Float?
+  tdacc  Float?
+  tddef  Float?
+  subavg Float?
+  win    Float?
+  draw   Float?
+  loss   Float?
+
+  @@index([draw], map: "ix_input_draw")
+  @@index([height], map: "ix_input_height")
+  @@index([id], map: "ix_input_id")
+  @@index([loss], map: "ix_input_loss")
+  @@index([name], map: "ix_input_name")
+  @@index([reach], map: "ix_input_reach")
+  @@index([sapm], map: "ix_input_sapm")
+  @@index([slpm], map: "ix_input_slpm")
+  @@index([stracc], map: "ix_input_stracc")
+  @@index([strdef], map: "ix_input_strdef")
+  @@index([subavg], map: "ix_input_subavg")
+  @@index([tdacc], map: "ix_input_tdacc")
+  @@index([tdavg], map: "ix_input_tdavg")
+  @@index([tddef], map: "ix_input_tddef")
+  @@index([weight], map: "ix_input_weight")
+  @@index([win], map: "ix_input_win")
 }

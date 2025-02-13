@@ -59,9 +59,9 @@ def get_db():
     finally:
         db.close()
 
-# Original fighters table
+# Original fighters table 
 class Fighter(Base):
-    __tablename__ = "fighters"
+    __tablename__ = "fighter"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
@@ -80,51 +80,11 @@ class Fighter(Base):
     subavg=Column(Float, index=True)
     record=Column(String, index=True)
 
-# Modified fighters table that matches with the processed table
-class FilteredFighters(Base):
-    __tablename__ = "filtered_fighters"
 
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    height=Column(String, index=True)
-    weight=Column(Float, index=True)
-    reach=Column(Float, index=True)
-    stance=Column(String, index=True)
-    dob=Column(Date, index=True)
-    slpm=Column(Float, index=True)
-    stracc=Column(String, index=True)
-    sapm=Column(Float, index=True)
-    strdef=Column(String, index=True)
-    tdavg=Column(Float, index=True)
-    tdacc=Column(String, index=True)
-    tddef=Column(String, index=True)
-    subavg=Column(Float, index=True)
-    record=Column(String, index=True)
-
-# Standardized fighter data that's ready for training
-class Processed(Base):
-    __tablename__ = "processed"
-
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    height=Column(Float, index=True)
-    weight=Column(Float, index=True)
-    reach=Column(Float, index=True)
-    slpm=Column(Float, index=True)
-    stracc=Column(Float, index=True)
-    sapm=Column(Float, index=True)
-    strdef=Column(Float, index=True)
-    tdavg=Column(Float, index=True)
-    tdacc=Column(Float, index=True)
-    tddef=Column(Float, index=True)
-    subavg=Column(Float, index=True)
-    win=Column(Float, index=True)
-    draw=Column(Float, index=True)
-    loss=Column(Float, index=True)
 
 # Add this class with your existing models
 class Input(Base):
-    __tablename__ = "Input"
+    __tablename__ = "input"
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
@@ -233,13 +193,13 @@ def read_fighters(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
     fighters = db.query(Fighter).offset(skip).limit(limit).all()
     return fighters
 
-# Get a fighter by id
-@app.get("/fighter/{id}", response_model=FighterResponse)
-def read_fighter(id: int, db: Session = Depends(get_db)):
-    fighter = db.query(FilteredFighters).filter(FilteredFighters.id == id).first()
-    if fighter is None:
-        raise HTTPException(status_code=404, detail="User not found")
-    return fighter
+# # Get a fighter by id
+# @app.get("/fighter/{id}", response_model=FighterResponse)
+# def read_fighter(id: int, db: Session = Depends(get_db)):
+#     fighter = db.query(FilteredFighters).filter(FilteredFighters.id == id).first()
+#     if fighter is None:
+#         raise HTTPException(status_code=404, detail="User not found")
+#     return fighter
 
 # Update a fighter
 @app.put("/fighter/{id}", response_model=FighterResponse)
@@ -264,11 +224,14 @@ def delete_fighter(id: int, db: Session = Depends(get_db)):
     return db_fighter
 
 # Replace the predict endpoint with this updated version
+# names be in body
+# put in the body of api
 @app.post("/predict/{names}")
 def predict(names: str, db: Session = Depends(get_db)):
 
         # Ensure the model is loaded (it will load on the first request)
     ml_model = download_model_if_needed()
+
 
     print(f"Received request for fighters: {names}")
     fighter_names = [name.strip() for name in names.split(",")]
@@ -303,3 +266,7 @@ def predict(names: str, db: Session = Depends(get_db)):
         "fighter1_probability":  1 - prob_list[0][0], 
         "fighter2_probability": 1 - prob_list[0][1]
     }
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)

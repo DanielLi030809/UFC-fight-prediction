@@ -7,7 +7,7 @@ import { BoxReveal } from "@/components/ui/box-reveal";
 import React from "react";
 import { Suspense } from "react";
 import { prisma } from "@/lib/prisma";
-import { Fighter } from "@prisma/client";
+import { fighter } from "@prisma/client";
 
 async function getFighters(query: string) {
   if (!query) return [];
@@ -19,7 +19,7 @@ async function getFighters(query: string) {
 
   const fighters = await Promise.all(
     fighterNames.map(async (name) => {
-      return prisma.fighter.findFirst({
+      return prisma.joined.findFirst({
         where: {
           name: {
             contains: name,
@@ -31,7 +31,7 @@ async function getFighters(query: string) {
   );
 
   // Filter out any null results and return the fighters
-  return fighters.filter((fighter): fighter is Fighter => fighter !== null);
+  return fighters.filter((fighter): fighter is fighter => fighter !== null);
 }
 
 async function PageContent({
